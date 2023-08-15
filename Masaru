@@ -10,7 +10,7 @@ openshit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 mainopen.Name = "mainopen"
 mainopen.Parent = openshit
-mainopen.BackgroundColor3 = Color3.fromRGB(26, 27, 69)
+mainopen.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 mainopen.Position = UDim2.new(0.101969875, 0, 0.110441767, 0)
 mainopen.Size = UDim2.new(0, 64, 0, 42)
 mainopen.Text = ""
@@ -328,8 +328,8 @@ mainopens.Parent = mainopen
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
- Hub.Text = " ||VanHung||"
- Hub.TextColor3 = Color3.fromRGB(164, 81, 219)
+ Hub.Text = "| hype |"
+ Hub.TextColor3 = Color3.fromRGB(0,255,0)
  Hub.TextSize = 16.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -1050,12 +1050,12 @@ end
  local Item = Instance.new("TextButton")
  Item.Name = "Item"
  Item.Parent = DropScroll
- Item.BackgroundColor3 = Color3.fromRGB(227, 247, 250)
+ Item.BackgroundColor3 = Color3.fromRGB(224,224,224)
  Item.BackgroundTransparency = 1.000
  Item.Size = UDim2.new(0, 310, 0, 26)
  Item.Font = Enum.Font.Gotham
  Item.Text = tostring(t)
- Item.TextColor3 = Color3.fromRGB(187, 234, 240)
+ Item.TextColor3 = Color3.fromRGB(225, 225, 225)
  Item.TextSize = 13.000
  Item.TextTransparency = 0.500
  
@@ -1137,14 +1137,14 @@ local UICorner_3 = Instance.new("UICorner")
 -- Prop --
 SliderFrame.Name = slidertitle or "SliderFrame"
 SliderFrame.Parent = MainFramePage
-SliderFrame.BackgroundColor3 = Color3.fromRGB(77, 42, 61)
+SliderFrame.BackgroundColor3 = Color3.fromRGB(28,28,28)
 SliderFrame.BackgroundTransparency = 1.000
 SliderFrame.BorderSizePixel = 0
 SliderFrame.Size = UDim2.new(0, 300, 0, 55)
 
 SliderFrame_2.Name = "SliderFrame_2"
 SliderFrame_2.Parent = SliderFrame
-SliderFrame_2.BackgroundColor3 = Color3.fromRGB(207, 212, 165)
+SliderFrame_2.BackgroundColor3 = Color3.fromRGB(28,28,28)
 SliderFrame_2.BackgroundTransparency = 1
 SliderFrame_2.BorderSizePixel = 0
 SliderFrame_2.Position = UDim2.new(0, 3, 0, 0)
@@ -1153,7 +1153,7 @@ SliderFrame_2.Size = UDim2.new(0, 308, 0, 55)
 UIStroke.Name = "UIStroke"
 UIStroke.Parent = SliderFrame_2
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-UIStroke.Color = Color3.fromRGB(240, 221, 221)
+UIStroke.Color = Color3.fromRGB(224,224,224)
 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
 UIStroke.Thickness = 1
 UIStroke.Transparency = 0
@@ -1165,17 +1165,17 @@ UICorner.CornerRadius = UDim.new(0, 3)
 
 ImageLabel.Name = "ImageLabel"
 ImageLabel.Parent = SliderFrame_2
-ImageLabel.BackgroundColor3 = Color3.fromRGB(222, 195, 195)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderSizePixel = 0
 ImageLabel.Position = UDim2.new(0, 5, 0, 5)
 ImageLabel.Size = UDim2.new(0, 18, 0, 18)
 ImageLabel.Image = "rbxassetid://"
-ImageLabel.ImageColor3 = Color3.fromRGB(255, 189, 189)
+ImageLabel.ImageColor3 = Color3.fromRGB(224,224,224)
 
 Space.Name = "Space"
 Space.Parent = SliderFrame_2
-Space.BackgroundColor3 = Color3.fromRGB(219, 211, 211)
+Space.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 Space.BackgroundTransparency = 1.000
 Space.Position = UDim2.new(0, 30, 0, 0)
 Space.Size = UDim2.new(0, 15, 0, 30)
@@ -1210,7 +1210,7 @@ SliderCorner2.Parent = SliderInput
 
 SliderButton.Name = "SliderButton"
 SliderButton.Parent = SliderInput
-SliderButton.BackgroundColor3 = Color3.fromRGB(117, 110, 110)
+SliderButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 SliderButton.BackgroundTransparency = 1.000
 SliderButton.BorderSizePixel = 0
 SliderButton.Position = UDim2.new(0, 0, 0, -7)
