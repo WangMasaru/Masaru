@@ -4230,17 +4230,17 @@ local Misc = Library:Tab("Misc","rbxassetid://11447063791")
 local Op = Library:Tab("Status", "rbxassetid://7040410130")
 --------------------------------------------------------------------
 
-Setting:Label("Join My Discord For More Info!")
+Setting:Label("Masaru HUB Created By Van Hung!")
 
 Setting:Line()
 
-Setting:Button("Copy Discord Link",function()
+Setting:Button("Copy Link Facebook",function()
  
  setclipboard("https://discord.gg/yPQarTm4")
  end)
 
 Setting:Seperator(" Setting ")
-Setting:Toggle("Auto Set Spawn Points",true,function(value)
+Setting:Toggle("Set Spawm Point",true,function(value)
  _G.AutoSetSpawn = value
  end)
 
@@ -4261,7 +4261,7 @@ Setting:Toggle("Anti AFK",true,function(value)
  end)
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-_G.DistanceMob = 20
+_G.DistanceMob = 25
 Setting:Slider("Khoảng cách Farm",1,100,20,function(value)
  _G.DistanceMob = value
  end)
@@ -4273,7 +4273,7 @@ Setting:Slider1("Farm Distance",1,100,20,function(value)
 end
 
 Setting:Dropdown("Phương Pháp Farm", {
- "Phía Sau","Dưới","Trên"
+ "Phía Sau","Phía Dưới","Phía Trên"
 },function(value)
  _G.Method = value
 end)
@@ -4283,9 +4283,9 @@ spawn(function()
  pcall(function()
   if _G.Method == "Phía Sau" then
   MethodFarm = CFrame.new(0,0,_G.DistanceMob)
-  elseif _G.Method == "Dưới" then
+  elseif _G.Method == "Phía Dưới" then
   MethodFarm = CFrame.new(0,-_G.DistanceMob,0) * CFrame.Angles(math.rad(90),0,0)
-  elseif _G.Method == "Trên" then
+  elseif _G.Method == "Phía Trên" then
   MethodFarm = CFrame.new(0,_G.DistanceMob,0) * CFrame.Angles(math.rad(-90),0,0)
   else
    MethodFarm = CFrame.new(0,_G.DistanceMob,0)
@@ -4415,7 +4415,7 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
 	game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
 end
 
-Setting:Toggle("Bring Mob [Normal]",true,function(value)
+Setting:Toggle("Bring Mob",true,function(value)
  _G.BringNormal = value
 end)
 
@@ -4439,7 +4439,7 @@ spawn(function()
     end)
 	end)
 	
-Setting:Toggle("Bring Mob [Extra+Lag]",false,function(value)
+Setting:Toggle("Bring Mob [Extra]",false,function(value)
  _G.BringExtra = value
 end)
 
@@ -4476,7 +4476,7 @@ end)
 			end
 		end)
 
-Setting:Toggle("Fast Attack [New]",true,function(value)
+Setting:Toggle("Fast Attack",true,function(value)
  _G.FastAttack = value
 end)
 
@@ -4488,7 +4488,7 @@ require(game.ReplicatedStorage.Util.CameraShaker):Stop()
 
 xShadowFastAttackx = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
 
-xShadowx = debug.getupvalues(xShadowFastAttackx)[2]
+xShadowx = debug.getupvalues(xShadowFastAttackx)[3]
 
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
@@ -4497,7 +4497,7 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 200
+                    xShadowx.activeController.hitboxMagnitude = 210
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
@@ -4511,7 +4511,7 @@ spawn(function()
     end)
 end)
 
-Setting:Toggle("Auto Ken Haki",_G.Auto_Ken,function(vu)
+Setting:Toggle("Auto Ken",_G.Auto_Ken,function(vu)
 	_G.Auto_Ken = vu
 end)
 spawn(function()
@@ -4529,7 +4529,7 @@ Setting:Toggle("Auto Click",false,function(value)
  _G.click = value
 end)
 
-Setting:Toggle("Disabled Damage Text",_G.DisableDamage,function(value)
+Setting:Toggle("Disable Damage",_G.DisableDamage,function(value)
  _G.DisableDamage = value
 end)
 
@@ -4545,7 +4545,7 @@ spawn(function()
  end
  end)
 
-Setting:Toggle("White Screen [ Booster FPS ]",_G.WhiteScreen,function(value)
+Setting:Toggle("Màn Hình Trắng [Giảm Lag]",_G.WhiteScreen,function(value)
  _G.WhiteScreen = value
 
  if _G.WhiteScreen == true then
@@ -4556,7 +4556,7 @@ Setting:Toggle("White Screen [ Booster FPS ]",_G.WhiteScreen,function(value)
 end)
 
 
-    Setting:Button("FPS Boost",function()
+    Setting:Button("Xóa Đồ Họa",function()
         pcall(function()
             game:GetService("Lighting").FantasySky:Destroy()
             local g = game
@@ -4605,15 +4605,15 @@ end)
     end)
 
 
-Setting:Seperator(" Settings Mastery ")
+Setting:Seperator(" Mastery Setting ")
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-_G.Kill_At = 25
+_G.Kill_At = 20
 Setting:Slider("Kill Health [For Mastery]",1,100,25,function(value)
  _G.Kill_At = value
 end)
 else
-_G.Kill_At = 25
+_G.Kill_At = 20
 Setting:Slider1("Kill Health [For Mastery]",1,100,25,function(value)
  _G.Kill_At = value
 end)
@@ -4641,7 +4641,7 @@ local GameTime = math.floor(workspace.DistributedGameTime+0.5)
 local Hour = math.floor(GameTime/(60^2))%24
 local Minute = math.floor(GameTime/(60^1))%60
 local Second = math.floor(GameTime/(60^0))%60
-Time:Set("[GameTime] : Hours : "..Hour.." Minutes : "..Minute.." Seconds : "..Second)
+Time:Set("[ TIME ] : Hours : "..Hour.." Minutes : "..Minute.." Seconds : "..Second)
 end
 
 spawn(function()
@@ -4656,7 +4656,7 @@ Client = Main:Label1("Client")
 
 function UpdateClient()
 local Fps = workspace:GetRealPhysicsFPS()
-Client:Refresh("[Fps] : "..Fps)
+Client:Refresh("[ FPS ] : "..Fps)
 end
 
 spawn(function()
@@ -4669,7 +4669,7 @@ Client1 = Main:Label1("Client")
 
 function UpdateClient1()
 local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
-Client1:Refresh("[Ping] : "..Ping)
+Client1:Refresh("[ PING ] : "..Ping)
 end
 
 spawn(function()
@@ -4708,7 +4708,7 @@ if v:IsA("Tool") then
 table.insert(WeaponList ,v.Name)
 end
 end
-local SelectWeapona = Main:Dropdown("Select Weapon",WeaponList,function(value)
+local SelectWeapona = Main:Dropdown("Chọn vũ khí",WeaponList,function(value)
  _G.Select_Weapon = value
  end)
 
@@ -4730,20 +4730,20 @@ spawn(function()
     end)
 end)
 
-Main:Button("Stop Teleport",function()
+Main:Button("Dừng Teleport",function()
   topos(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
   _G.Clip = false
   end)
 
 Main:Seperator(" Main ")
 
-Main:Dropdown("Select Mode Farm", {
- "Level Farm","Fast Mode","No Quest","Near Farm Mode"
+Main:Dropdown("Chọn chế độ Farm", {
+ "Farm Level","Farm Nhanh","No Quest","Farm Gần"
 },function(value)
  _G.Select_Mode_Farm = value
 end)
 
-Main:Toggle("Start Auto Farm",_G.Auto_Farm_Level,function(value)
+Main:Toggle("Bắt đầu Farm",_G.Auto_Farm_Level,function(value)
  _G.Auto_Farm_Level = value
  StopTween(_G.Auto_Farm_Level)
 end)
@@ -4775,7 +4775,7 @@ end
 
 if World2 then
 
-Main:Seperator("Auto New Sea")
+Main:Seperator("Tự động qua sea mới")
 
 Main:Toggle("Auto Third Sea",_G.Auto_Third_World,function(value)
  _G.Auto_Third_World = value
@@ -4844,13 +4844,13 @@ tableMon = {
 }
 end
 
-Main:Seperator(" Other ")
+Main:Seperator(" Khác ")
 
-Main:Dropdown("Select Monster", tableMon, function(vu)
+Main:Dropdown("Chọn quái:", tableMon, function(vu)
  SelectMonster = vu
  end)
 
-Main:Toggle("Farm Selected Monster",_G.AutoFarmSelectMonster,function(vu)
+Main:Toggle("Farm quái đã chọn",_G.AutoFarmSelectMonster,function(vu)
  _G.AutoFarmSelectMonster = vu
 end)
 
@@ -4896,7 +4896,7 @@ end)
 
 Main:Seperator(" Mastery ")
  
-Main:Toggle("Auto BF Mastery",_G.AutoFarmFruitMastery,function(value)
+Main:Toggle("BF Mastery",_G.AutoFarmFruitMastery,function(value)
   _G.AutoFarmFruitMastery = value
   StopTween(_G.AutoFarmFruitMastery)
   if _G.AutoFarmFruitMastery == false then
@@ -5152,7 +5152,7 @@ Main:Toggle("Auto BF Mastery",_G.AutoFarmFruitMastery,function(value)
    end)
   end)
  
- Main:Toggle("Auto Gun Mastery",_G.AutoFarmGunMastery,function(value)
+ Main:Toggle("Gun Mastery",_G.AutoFarmGunMastery,function(value)
   _G.AutoFarmGunMastery = value
   StopTween(_G.AutoFarmGunMastery)
   end)
@@ -5237,7 +5237,7 @@ Main:Toggle("Auto BF Mastery",_G.AutoFarmFruitMastery,function(value)
  end)
 
  
-Main:Seperator(" Bosses ")
+Main:Seperator(" Boss ")
 
 local Boss = {}
     
@@ -5250,11 +5250,11 @@ local Boss = {}
         end
     end
     
-    local BossName = Main:Dropdown("Select Boss",Boss,function(value)
+    local BossName = Main:Dropdown("Chọn Boss",Boss,function(value)
        _G.Select_Boss = value
     end)
     
-    Main:Button("Refresh Boss",function()
+    Main:Button("Làm Mới",function()
         BossName:Clear()
             for i, v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
             if string.find(v.Name, "Boss") then
@@ -5263,11 +5263,11 @@ local Boss = {}
         end
     end)
 
-Main:Toggle("Auto Farm Boss",_G.Auto_Farm_Boss,function(value)
+Main:Toggle("Đấm Vỡ Alo Boss",_G.Auto_Farm_Boss,function(value)
  _G.Auto_Farm_Boss = value
  end)
 
-Main:Toggle("Auto Quest Boss",true,function(value)
+Main:Toggle("Nhận Nhiệm Vụ",true,function(value)
  _G.Auto_Quest_Boss = value
 end)
 
@@ -5354,7 +5354,7 @@ spawn(function()
 	end
 end)
 
-Main:Toggle("Auto Farm All Boss",_G.Auto_Farm_All_Boss,function(value)
+Main:Toggle("Càn Quét Tất Cả Boss",_G.Auto_Farm_All_Boss,function(value)
  _G.Auto_Farm_All_Boss = value
 StopTween(_G.Auto_Farm_All_Boss)
 end)
@@ -5503,13 +5503,13 @@ MaterialMethod = {
  }
  end
  
-Main:Seperator(" Materials ")
+Main:Seperator(" Nguyên Liệu ")
  
- local SelectMaterial = Main:Dropdown("Select Material",MaterialMethod,function(value)
+ local SelectMaterial = Main:Dropdown("Material",MaterialMethod,function(value)
  _G.SelectMaterial = value
 end)
 
-Main:Toggle("Farm Selected Material",_G.AutoFarmMaterial,function(t)
+Main:Toggle("Farm Nguyên Liệu",_G.AutoFarmMaterial,function(t)
 			_G.AutoFarmMaterial = t
 			StopTween(_G.AutoFarmMaterial)
 end)
@@ -5649,7 +5649,7 @@ spawn(function()
 			end
 end)
 
-Main:Seperator(" Mirage Island ")
+Main:Seperator(" Đảo Bí Ẩn ")
 
 Main:Toggle("Auto Mirage Island",false,function(value)
  if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
@@ -5665,65 +5665,15 @@ Main:Toggle("Auto Mirage Island Hop",false,function(value)
  _G.Mystichop = value
 end)
 
-Main:Seperator(" Chest ")
-
-Main:Toggle("Auto Chest Fast",false,function(vu)
-	_G.ChestBypass = vu
-end)
-
-spawn(function()
-while wait() do
-if _G.ChestBypass then
-pcall(function()
-for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-      if string.find(v.Name, "Chest") then
-          print(v.Name)
-          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-          wait(.15)
-      end
-  end
-  game.Players.LocalPlayer.Character.Head:Destroy()
-  for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
-   if string.find(v.Name, "Chest") and v:IsA("TouchTransmitter") then
-   firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
-   wait()
-   firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
-   end
-   end
-  end)
-    end
-  end
-end)
-
-spawn(function()
-while task.wait() do
-if _G.ChestBypass then
-        local ohString1 = "SetTeam"
-        local ohString2 = "Pirates"
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(ohString1, ohString2)
-     end
-end
-end)
-
-Main:Toggle("Auto Chest Tween",_G.Grab_Chest,function(vu)
-	Grab_Chest = vu
-    StopTween(Grab_Chest)
-	_G.Grab_Chest = vu
-end)
-
-Main:Button("Instant Tp Chest (Risk)",function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Chest_onoff"))()
- end)
-
 if World3 then
 Main:Seperator(" Bones ")
 
-Main:Toggle("Auto Farm Bone",_G.Auto_Farm_Bone,function(value)
+Main:Toggle("Farm Bone",_G.Auto_Farm_Bone,function(value)
  _G.Auto_Farm_Bone = value
  StopTween(_G.Auto_Farm_Bone)
  end)
 
-Main:Toggle("Auto Trade Bone",_G.Auto_Trade_Bone,function(value)
+Main:Toggle("Random Bone",_G.Auto_Trade_Bone,function(value)
  _G.Auto_Trade_Bone = value
  end)
 
@@ -5745,13 +5695,13 @@ spawn(function()
 Main:Button("Check Bone", function()
  game.StarterGui:SetCore("SendNotification", {
   Title = "Checking Bone",
-  Text = ("Your Bone : "..(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Check")))
+  Text = ("Bone : "..(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Check")))
  })
  wait(1)
 end)
 end
 
-Main:Seperator(" Observation ")
+Main:Seperator(" Haki Quan Sát (Ken) ")
 	
 local ObservationLevel = Main:Label("")
 
@@ -5766,7 +5716,7 @@ spawn(function()
 	end
 end)
     
-       Main:Toggle("Auto Farm Observation",_G.AutoObservation,function(value)
+       Main:Toggle("Farm Exp Ken",_G.AutoObservation,function(value)
         _G.AutoObservation = value
         StopTween(_G.AutoObservation)
     end)
@@ -5788,7 +5738,7 @@ end)
         end
     end)
     
-    Main:Toggle("Auto Farm Observation Hop",_G.AutoObservation_Hop,function(value)
+    Main:Toggle("Đổi Sever Farm Ken",_G.AutoObservation_Hop,function(value)
         _G.AutoObservation_Hop = value
     end)
     
@@ -5801,7 +5751,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 wait(1)
 Notification:Notify(
-   {Title = "FARINHA HUB", Description = "You Have Max Observation"},
+   {Title = "FARINHA HUB", Description = "Bạn Đã Max Điểm Ken"},
    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "option"},
    {Image = "https://i.pinimg.com/564x/08/25/06/082506876327d31cb742bdfa55ebef87.jpg", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
 )
@@ -5866,185 +5816,10 @@ Notification:Notify(
             end
         end)
     end)
-
-Main:Seperator(" Fake Race V4 ")
-
-
-Main:Button("Mink Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Mink V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(102, 255, 153),
-  Color2 = Color3.fromRGB(102, 255, 153),
-  Color3 = Color3.fromRGB(102, 255, 153),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
- end)
-Main:Button("Fishman Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Fishman V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(5, 115, 166),
-  Color2 = Color3.fromRGB(5, 115, 166),
-  Color3 = Color3.fromRGB(5, 115, 166),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
- end)
-Main:Button("Skypeian Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Skypeian V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(222, 222, 0),
-  Color2 = Color3.fromRGB(222, 222, 0),
-  Color3 = Color3.fromRGB(222, 222, 0),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
- end)
-Main:Button("Ghoul Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Ghoul V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(155, 155, 155),
-  Color2 = Color3.fromRGB(0, 0, 0),
-  Color3 = Color3.fromRGB(155, 155, 155),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
-
- end)
-Main:Button("Cyborg Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Cyborg V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(166, 0, 111),
-  Color2 = Color3.fromRGB(166, 0, 111),
-  Color3 = Color3.fromRGB(166, 0, 111),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
- end)
-Main:Button("Human Fake Transform",function()
- require(game:GetService("ReplicatedStorage").Notification).new("Human V4!"):Display();
- wait()
- setthreadcontext(5)
-
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsTransform = {
-  Character = game.Players.LocalPlayer.Character,
-  CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
-  Color1 = Color3.fromRGB(166, 0, 0),
-  Color2 = Color3.fromRGB(166, 0, 0),
-  Color3 = Color3.fromRGB(166, 0, 0),
- }
-
- Player.Character.Humanoid:LoadAnimation(ReplicatedStorage.Util.Anims.Storage["2"].RaceTransform):Play()
-
- delay(1, function()
-  pcall(function() require(ReplicatedStorage.Effect.Container.RaceTransformation.Main)(ArgsTransform) end)
-  end)
-
- end)
-
-Main:Button("Fake Mink Dash Animation",function()
- local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
- local Player = game:GetService("Players").LocalPlayer
-
- local ArgsDash = {
-  Character = Player.Character,
-  Duration = .25,
-  CFrame = Player.Character.HumanoidRootPart.CFrame,
- }
-
- local old; old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
-  if self.Name == "CommE" then
-  local args = {
-   ...
-  }
-
-  if args[1] == "Dodge" then
-  coroutine.wrap(function() require(ReplicatedStorage.Effect.Container.Shared.Lightningtopos)(ArgsDash) end)()
-  end
-  end
-
-  return old(self, ...)
-  end))
-end)
  
  if World3 then
 
-Weapon:Seperator(" Item & Quest ")
+Weapon:Seperator(" Boss Bí Ẩn ")
 
 local Total_Elite_Hunter = Weapon:Label("Elite Hunter")
 
@@ -6055,9 +5830,9 @@ local Elite_Hunter_Status = Weapon:Label("Status")
 		while wait() do
 			pcall(function()
 				if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo [Lv. 1750]") or game:GetService("ReplicatedStorage"):FindFirstChild("Deandre [Lv. 1750]") or game:GetService("ReplicatedStorage"):FindFirstChild("Urban [Lv. 1750]") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo [Lv. 1750]") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre [Lv. 1750]") or game:GetService("Workspace").Enemies:FindFirstChild("Urban [Lv. 1750]") then
-					Elite_Hunter_Status:Set("Status : Elite Spawn!")	
+					Elite_Hunter_Status:Set("Trạng Thái: Đã Có Boss!")	
 				else
-					Elite_Hunter_Status:Set("Status : Elite Not Spawn")	
+					Elite_Hunter_Status:Set("Trạng Thái: Chưa Có Boss!")	
 				end
 			end)
 		end
@@ -6065,17 +5840,17 @@ local Elite_Hunter_Status = Weapon:Label("Status")
 
 	spawn(function()
 		while wait() do
-			Total_Elite_Hunter:Set("Total Elite Hunter : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
+			Total_Elite_Hunter:Set("Đã Đánh Bại: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
 		end
 	end)
 	
-	Weapon:Toggle("Auto Elite Hunter",_G.Auto_Elite_Hunter,function(value)
+	Weapon:Toggle("Săn Boss Bí Ẩn",_G.Auto_Elite_Hunter,function(value)
  _G.Auto_Elite_Hunter = value
 StopTween(_G.Auto_Elite_Hunter)
 end)
 
 	
-	Weapon:Toggle("Auto Elite Hunter Hop",_G.Auto_Elite_Hunter_Hop,function(value)
+	Weapon:Toggle("Đổi Sever Săn Boss Bí Ẩn",_G.Auto_Elite_Hunter_Hop,function(value)
  _G.Auto_Elite_Hunter_Hop = value
 end)
 
@@ -8843,7 +8618,7 @@ spawn(function()
 end)
 
 if World1 or World2 then
-    Race:Label("Only Available At Sea 3")
+    Race:Label("Ngu Hết Cứu, Qua Sea 3 Mới Dùng Được!")
 end
 
 if World3 then
