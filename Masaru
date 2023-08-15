@@ -5908,26 +5908,26 @@ local Mob_Kill_Cake_Prince = Weapon:Label("Total")
 		while wait() do
 			pcall(function()
 				if string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 88 then
-					Mob_Kill_Cake_Prince:Set("Killed : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41).."/500")
+					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41).." con quái")
 				elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 87 then
-					Mob_Kill_Cake_Prince:Set("Kill : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40).."/500")
+					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40).." con quái")
 				elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
-					Mob_Kill_Cake_Prince:Set("Kill : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39).."/500")
+					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39).." con quái")
 				else
-					Mob_Kill_Cake_Prince:Set("Boss Is Spawned")
+					Mob_Kill_Cake_Prince:Set("Đã Có Katakuri!!!")
 				end
 			end)
 		end
 	end)
 
-Weapon:Toggle("Auto Cake Prince",_G.Auto_Cake_Prince,function(value)
+Weapon:Toggle("Farm Katakuri",_G.Auto_Cake_Prince,function(value)
  _G.Auto_Cake_Prince = value
 StopTween(_G.Auto_Cake_Prince)
 end)
 	
 	
 	
-	Weapon:Toggle("Auto Open Dough Dungeon",_G.Auto_Open_Dough_Dungeon,function(value)
+	Weapon:Toggle("Tự Động Mở Raid Dough",_G.Auto_Open_Dough_Dungeon,function(value)
  _G.Auto_Open_Dough_Dungeon = value
 StopTween(_G.Auto_Open_Dough_Dungeon)
 end)
@@ -6018,7 +6018,7 @@ end)
 
 Weapon:Seperator(" Soul Guitar ")
 
-Weapon:Toggle("Auto Soul Guitar",_G.AutoNevaSoulGuitar,function(value)
+Weapon:Toggle("Tự Động Lấy Soul Guitar",_G.AutoNevaSoulGuitar,function(value)
   _G.AutoNevaSoulGuitar = value    
  			StopTween(_G.AutoNevaSoulGuitar)
  end)
@@ -6143,13 +6143,13 @@ end
 		end
 end)
 
-Weapon:Toggle("Auto Soul Guitar + Hop",false,function(value)
+Weapon:Toggle("Auto Soul Guitar Hop",false,function(value)
   _G.soulGuitarhop = value    
  end)
 
-Weapon:Seperator(" Dual Curse Katana ")
+Weapon:Seperator(" Cursed Dual Katana ")
 
-Weapon:Toggle("Auto CDK Quest(Not Working)",_G.AutoCdk,function(value)
+Weapon:Toggle("Làm Nhiệm Vụ Lấy CDK",_G.AutoCdk,function(value)
  _G.AutoCdk = value
 end)
 
@@ -6606,13 +6606,13 @@ end
 
 if World1 then
 
-Weapon:Seperator(" Auto Saber ")
+Weapon:Seperator(" Saber ")
 
-Weapon:Toggle("Auto Saber",_G.AutoSaber,function(value)
+Weapon:Toggle("Lấy Saber",_G.AutoSaber,function(value)
 				_G.AutoSaber = value
 			end)
 			
-			Weapon:Toggle("Auto Saber Hop",_G.AutoSaberHop,function(value)
+			Weapon:Toggle("Lấy Saber Hop",_G.AutoSaberHop,function(value)
 				_G.AutoSaberHop = value
 			end)
 			
@@ -6824,12 +6824,12 @@ Weapon:Toggle("Auto Saber",_G.AutoSaber,function(value)
 	
 	Weapon:Seperator(" Pole ")
 	
-	Weapon:Toggle("Auto Pole V.1",_G.AutoPole,function(value)
+	Weapon:Toggle("Lấy Pole V1",_G.AutoPole,function(value)
         _G.AutoPole = value
         StopTween(_G.AutoPole)
     end)
     
-    Weapon:Toggle("Auto Pole V.1 Hop",_G.AutoPoleHop,function(value)
+    Weapon:Toggle("Lấy Pole V1 Hop",_G.AutoPoleHop,function(value)
         _G.AutoPoleHop = value
     end)
     
@@ -6873,14 +6873,14 @@ elseif World2 then
 
 Weapon:Seperator(" Bartilo Quest ")
 
-Weapon:Toggle("Auto Bartilo Quest",_G.Auto_Bartilo_Quest,function(value)
+Weapon:Toggle("Làm Bartilo Quest",_G.Auto_Bartilo_Quest,function(value)
  _G.Auto_Bartilo_Quest = value
 StopTween(_G.Auto_Bartilo_Quest)
 end)
 
-Weapon:Seperator(" Race V2 ")
+Weapon:Seperator(" Tộc V2 ")
 
-Weapon:Toggle("Auto Evo Race [V2]",_G.Auto_Evo_Race_V2,function(value)
+Weapon:Toggle("Tự Động Up Tộc V2",_G.Auto_Evo_Race_V2,function(value)
  _G.Auto_Evo_Race_V2 = value
 StopTween(_G.Auto_Evo_Race_V2)
 end)
@@ -6956,7 +6956,7 @@ end)
 
 Weapon:Seperator(" Legendary Sword ")
 
-Weapon:Toggle("Auto Buy Legendary Sword",_G.AutoBuyLegendarySword,function(Value)
+Weapon:Toggle("Mua Kiếm Huyền Thoại",_G.AutoBuyLegendarySword,function(Value)
 			_G.AutoBuyLegendarySword = Value
 		end)
 		spawn(function()
@@ -6987,7 +6987,7 @@ Weapon:Toggle("Auto Buy Legendary Sword",_G.AutoBuyLegendarySword,function(Value
             end
 		end)
 
-		Weapon:Toggle("Auto Buy Legendary Sword Hop",_G.AutoBuySwordHop,function(Value)
+		Weapon:Toggle("Mua Kiếm Huyền Thoại Hop",_G.AutoBuySwordHop,function(Value)
 			_G.AutoBuyLegendarySword_Hop = Value
 		end)
 		spawn(function()
@@ -7066,9 +7066,9 @@ Weapon:Toggle("Auto Buy Legendary Sword",_G.AutoBuyLegendarySword,function(Value
 		end
 	end)
 
-Weapon:Seperator(" Haki Color Enhancement ")
+Weapon:Seperator(" Haki Color ")
 
-	Weapon:Toggle("Auto Buy Enchancement",_G.Auto_Buy_Enchancement,function(value)
+	Weapon:Toggle("Tự Động Mua Haki Màu",_G.Auto_Buy_Enchancement,function(value)
  _G.Auto_Buy_Enchancement = value
 StopTween(_G.Auto_Buy_Enchancement)
 end)
@@ -7088,7 +7088,7 @@ end)
 
 		Weapon:Seperator(" Rengoku ")
 
-	Weapon:Toggle("Auto Rengoku",_G.Auto_Rengoku,function(value)
+	Weapon:Toggle("Lấy Kiếm Rengoku",_G.Auto_Rengoku,function(value)
  _G.Auto_Rengoku = value
 StopTween(_G.Auto_Rengoku)
 end)
@@ -7147,13 +7147,13 @@ end)
 	
 		Weapon:Seperator(" Swan Glasses ")
 
-Weapon:Toggle("Auto Swan Glasses",_G.Auto_Swan_Glasses,function(value)
+Weapon:Toggle("Lấy Kính Swan",_G.Auto_Swan_Glasses,function(value)
  _G.Auto_Swan_Glasses = value
 StopTween(_G.Auto_Swan_Glasses)
 end)
 
 
-	Weapon:Toggle("Auto Swan Glasses Hop",_G.Auto_Swan_Glasses_Hop,function(value)
+	Weapon:Toggle("Lấy Kính Swan Hop",_G.Auto_Swan_Glasses_Hop,function(value)
  _G.Auto_Swan_Glasses_Hop = value
 end)
 
@@ -7187,13 +7187,13 @@ end)
 	
 		Weapon:Seperator(" Trident ")
 	
-	Weapon:Toggle("Auto Dragon Trident",_G.Auto_Dragon_Trident,function(value)
+	Weapon:Toggle("Lấy Đinh Ba Rồng",_G.Auto_Dragon_Trident,function(value)
  _G.Auto_Dragon_Trident = value
 StopTween(_G.Auto_Dragon_Trident)
 end)
 
 	
-	Weapon:Toggle("Auto Dragon Trident Hop",_G.Auto_Dragon_Trident_Hop,function(value)
+	Weapon:Toggle("Lấy Đinh Ba Rồng Hop",_G.Auto_Dragon_Trident_Hop,function(value)
 _G.Auto_Dragon_Trident_Hop = value
 end)
 	
@@ -7235,13 +7235,13 @@ elseif World3 then
 
 	Weapon:Seperator(" Soul Reaper ")
 
-Weapon:Toggle("Auto Soul Reaper",_G.Auto_Soul_Reaper,function(value)
+Weapon:Toggle("Đánh Soul Reaper",_G.Auto_Soul_Reaper,function(value)
  _G.Auto_Soul_Reaper = value
 StopTween(_G.Auto_Soul_Reaper)
 end)
 
 
-Weapon:Toggle("Auto Soul Reaper Hop",_G.Auto_Soul_Reaper_Hop,function(value)
+Weapon:Toggle("Đánh Soul Reaper Hop",_G.Auto_Soul_Reaper_Hop,function(value)
  _G.Auto_Soul_Reaper_Hop = value
 StopTween(_G.Auto_Soul_Reaper_Hop)
 end)
@@ -7396,7 +7396,7 @@ end)
 	
 		Weapon:Seperator(" Yama ")
 	
-	Weapon:Toggle("Auto Yama",_G.Auto_Yama,function(value)
+	Weapon:Toggle("Lấy Kiếm Yama",_G.Auto_Yama,function(value)
 	 _G.Auto_Yama = value
  	StopTween(_G.Auto_Yama)
 end)
@@ -7416,13 +7416,13 @@ end)
 	
 		Weapon:Seperator(" Rainbow Haki ")
 	
-	Weapon:Toggle("Auto Rainbow Haki",_G.Auto_Rainbow_Haki,function(value)
+	Weapon:Toggle("Lấy Haki 7 Màu",_G.Auto_Rainbow_Haki,function(value)
  _G.Auto_Rainbow_Haki = value
 StopTween(_G.Auto_Rainbow_Haki)
 end)
 
 	
-	Weapon:Toggle("Auto Rainbow Haki Hop",_G.Auto_Rainbow_Haki_Hop,function(value)
+	Weapon:Toggle("Lấy Haki 7 Màu Hop",_G.Auto_Rainbow_Haki_Hop,function(value)
  _G.Auto_Rainbow_Haki_Hop = value
 StopTween(_G.Auto_Rainbow_Haki_Hop)
 end)
@@ -7579,13 +7579,13 @@ end)
 	
 		Weapon:Seperator(" Canvander ")
 
-	Weapon:Toggle("Auto Canvander",_G.Auto_Canvander,function(value)
+	Weapon:Toggle("Lấy Kiếm Canvander",_G.Auto_Canvander,function(value)
  _G.Auto_Canvander = value
 StopTween(_G.Auto_Canvander)
 end)
 
 	
-	Weapon:Toggle("Auto Canvander Hop",_G.Auto_Canvander_Hop,function(value)
+	Weapon:Toggle("Lấy Kiếm Canvander Hop",_G.Auto_Canvander_Hop,function(value)
  _G.Auto_Canvander_Hop = value
 StopTween(_G.Auto_Canvander_Hop)
 end)
@@ -7623,13 +7623,13 @@ end)
 	
 		Weapon:Seperator(" Twin Hook ")
 	
-	Weapon:Toggle("Auto Twin Hook",_G.Auto_Twin_Hook,function(value)
+	Weapon:Toggle("Lấy Twin Hook",_G.Auto_Twin_Hook,function(value)
  _G.Auto_Twin_Hook = value
 StopTween(_G.Auto_Twin_Hook)
 end)
 
 	
-	Weapon:Toggle("Auto Twin Hook Hop",_G.Auto_Twin_Hook_Hop,function(value)
+	Weapon:Toggle("Lấy Twin Hook Hop",_G.Auto_Twin_Hook_Hop,function(value)
  _G.Auto_Twin_Hook_Hop = value
 StopTween(_G.Auto_Twin_Hook_Hop)
 end)
@@ -7667,13 +7667,13 @@ end)
 	
 		Weapon:Seperator(" Serpent Bow ")
 
-Weapon:Toggle("Auto Serpent Bow",_G.Auto_Serpent_Bow,function(value)
+Weapon:Toggle("Lấy Serpent Bow",_G.Auto_Serpent_Bow,function(value)
  _G.Auto_Serpent_Bow = value
 StopTween(_G.Auto_Serpent_Bow)
 end)
 
 	
-	Weapon:Toggle("Auto Serpent Bow Hop",_G.Auto_Serpent_Bow_Hop,function(value)
+	Weapon:Toggle("Lấy Serpent Bow Hop",_G.Auto_Serpent_Bow_Hop,function(value)
  _G.Auto_Serpent_Bow_Hop = value
 StopTween(_G.Auto_Serpent_Bow_Hop)
 end)
@@ -7711,7 +7711,7 @@ end)
 
 Weapon:Seperator(" Tushita ")
 
-Weapon:Toggle("Auto Tushita Sword",_G.Autotushita,function(value)
+Weapon:Toggle("Lấy Kiếm Tushita",_G.Autotushita,function(value)
  _G.Autotushita = value
 	end)
 	
@@ -7749,7 +7749,7 @@ spawn(function()
 				end
 		end)
 
-Weapon:Toggle("Auto Holy Torch",_G.Auto_Holy_Torch,function(value)
+Weapon:Toggle("Đốt Đuốc",_G.Auto_Holy_Torch,function(value)
  _G.Auto_Holy_Torch = value
 StopTween(_G.Auto_Holy_Torch)
 end)
@@ -7757,9 +7757,9 @@ end
 
 if World3 then
 
-Weapon:Seperator(" Observation Haki V2 ")
+Weapon:Seperator(" Ken Haki V2 ")
 
-Weapon:Toggle("Auto Observation Haki V2",_G.AutoObservationHakiV2,function(x)
+Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 		_G.AutoObservationHakiV2 = x
 	end)
 
@@ -8056,7 +8056,7 @@ if World3 then
 
 Weapon:Seperator(" Musketeer Hat ")
 
-Weapon:Toggle("Auto Musketeer Hat",_G.Auto_Musketeer_Hat,function(value)
+Weapon:Toggle("Lấy Musketeer Hat",_G.Auto_Musketeer_Hat,function(value)
  _G.Auto_Musketeer_Hat = value
 StopTween(_G.Auto_Musketeer_Hat)
 end)
@@ -8181,12 +8181,12 @@ if World2 then
 
 	Weapon:Seperator(" Superhuman ")
 	
-Weapon:Toggle("Auto Superhuman",_G.Auto_Superhuman,function(value)
+Weapon:Toggle("Lấy Superhuman",_G.Auto_Superhuman,function(value)
  _G.Auto_Superhuman = value
 end)
 
 
-Weapon:Toggle("Auto Fully Superhuman",_G.Auto_Fully_Superhuman,function(value)
+Weapon:Toggle("Cày Mua Superhuman",_G.Auto_Fully_Superhuman,function(value)
  _G.Auto_Fully_Superhuman = value
 end)
 
@@ -8298,7 +8298,7 @@ end)
 
 Weapon:Seperator(" Death Step ")
 
-Weapon:Toggle("Auto Death Step",_G.Auto_Death_Step,function(value)
+Weapon:Toggle("Lấy Death Step",_G.Auto_Death_Step,function(value)
  _G.Auto_Death_Step = value
 StopTween(_G.Auto_Death_Step)
 end)
@@ -8384,7 +8384,7 @@ end)
 
 Weapon:Seperator(" Sharkman Karate ")
 
-Weapon:Toggle("Auto Sharkman Karate",_G.Auto_SharkMan_Karate,function(value)
+Weapon:Toggle("Lấy Sharkman Karate",_G.Auto_SharkMan_Karate,function(value)
  _G.Auto_SharkMan_Karate = value
 StopTween(_G.Auto_SharkMan_Karate)
 end)
@@ -8412,7 +8412,7 @@ spawn(function()
 	end
 end)
 
-Weapon:Toggle("Auto Fully Sharkman Karate",_G.Auto_Fully_SharkMan_Karate,function(value)
+Weapon:Toggle("Cày Mua Sharkman Karate",_G.Auto_Fully_SharkMan_Karate,function(value)
  _G.Auto_Fully_SharkMan_Karate = value
 end)
 
@@ -8472,7 +8472,7 @@ if World3 then
 
 Weapon:Seperator(" Electric Claw ")
 
-Weapon:Toggle("Auto Electric Claw",_G.Auto_Electric_Claw,function(value)
+Weapon:Toggle("Lấy Electric Claw",_G.Auto_Electric_Claw,function(value)
  _G.Auto_Electric_Claw = value
 end)
 
@@ -8501,7 +8501,7 @@ end)
 
 Weapon:Seperator(" Dragon Talon ")
 
-Weapon:Toggle("Auto Dragon Talon",_G.Auto_Dragon_Talon,function(value)
+Weapon:Toggle("Lấy Dragon Talon",_G.Auto_Dragon_Talon,function(value)
  _G.Auto_Dragon_Talon = value
 end)
 
@@ -8530,7 +8530,7 @@ end)
 
 Weapon:Seperator(" God Human ")
 
-Weapon:Toggle("Auto_God_Human",_G.Auto_God_Human,function(value)
+Weapon:Toggle("Lấy God Human",_G.Auto_God_Human,function(value)
  _G.Auto_God_Human = value
 end)
 end
@@ -8624,19 +8624,19 @@ end
 if World3 then
 Race:Seperator("Race V4")
     
-    Race:Button("Teleport To Timple Of Time",function()
+    Race:Button("Đi Đến Timple Of Time",function()
   Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
     end)
     
-Race:Button("Teleport To Lever Pull",function()
+Race:Button("Đi Đến Cần Gạt",function()
   topos(CFrame.new(28575.181640625, 14936.6279296875, 72.31636810302734))
 end)
 
-Race:Button("Teleport To Acient One (Must Be in Temple Of Time!)",function()
+Race:Button("Đi Đến NPC Acient One",function()
   topos(CFrame.new(28981.552734375, 14888.4267578125, -120.245849609375))
 end)
    
-   Race:Button("Unlock Lever.", function()
+   Race:Button("Unlock Lever", function()
 venyx:Notify("Unlocked")
 if game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt") then
     game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt"):Remove()
@@ -8689,7 +8689,7 @@ end
 ProximityPrompt.Triggered:Connect(onProximity)
 end)
 
-Race:Button("Clock Acces.", function()
+Race:Button("Đồng Hồ Thời Gian", function()
     game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
     game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
 end)
@@ -8699,42 +8699,42 @@ Race:Toggle("Disabled Inf Stairs", nil, function(value)
 end)
    Race:Line()
  
-  Race:Button("Teleport Cyborg Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Cyborg",function()
   topos(CFrame.new(28492.4140625, 14894.4267578125, -422.1100158691406))
   end)
   
-  Race:Button("Teleport Fish Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Fish",function()
   topos(CFrame.new(28224.056640625, 14889.4267578125, -210.5872039794922))
   end)
   
-  Race:Button("Teleport Ghoul Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Ghoul",function()
   topos(CFrame.new(28672.720703125, 14889.1279296875, 454.5961608886719))
   end)
   
-  Race:Button("Teleport Human Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Human",function()
   topos(CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938))
   end)
   
-  Race:Button("Teleport Mink Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Mink",function()
   topos(CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969))
   end)
   
-  Race:Button("Teleport Sky Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Tele Đến Cổng Sky",function()
   topos(CFrame.new(28967.408203125, 14918.0751953125, 234.31198120117188))
   end)
   
   Race:Line()
   
-  Race:Button("Teleport To Safe Zone When Pvp (Must Be in Temple Of Time!)",function()
+  Race:Button("Đến Vùng An Toàn Khi PvP",function()
   topos(CFrame.new(28273.0859375, 14896.5078125, 157.42063903808594))
   end)
   
-  Race:Button("Teleport Pvp Zone (Must Be in Temple Of Time!)",function()
+  Race:Button("Đến Vùng PvP",function()
   topos(CFrame.new(28766.681640625, 14967.1455078125, -164.13290405273438))
   end)
   end
 
-Stats:Seperator(" Auto Stats ")
+Stats:Seperator(" Stats ")
 
 Stats:Toggle("Auto Stats Melee",_G.Auto_Stats_Melee,function(value)
  _G.Auto_Stats_Melee = value
@@ -8755,7 +8755,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("Auto Stats Defense",_G.Auto_Stats_Defense,function(value)
+Stats:Toggle("Auto Defense",_G.Auto_Stats_Defense,function(value)
  _G.Auto_Stats_Defense = value
 end)
 
@@ -8774,7 +8774,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("Auto Stats Sword",_G.Auto_Stats_Sword,function(value)
+Stats:Toggle("Auto Sword",_G.Auto_Stats_Sword,function(value)
  _G.Auto_Stats_Sword = value
 end)
 
@@ -8793,7 +8793,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("Auto Stats Gun",_G.Auto_Stats_Gun,function(value)
+Stats:Toggle("Auto Gun",_G.Auto_Stats_Gun,function(value)
  _G.Auto_Stats_Gun = value
 end)
 
@@ -8811,7 +8811,7 @@ spawn(function()
 	end
 end)
 
-Stats:Toggle("Auto Stats Devil Fruit",_G.Auto_Stats_Devil_Fruit,function(value)
+Stats:Toggle("Auto Blox Fruit",_G.Auto_Stats_Devil_Fruit,function(value)
  _G.Auto_Stats_Devil_Fruit = value
 end)
 
@@ -8867,7 +8867,7 @@ Playerslist = {}
         _G.Select_Player = value
     end)
     
-    P:Button("Refresh Player",function()
+    P:Button("Làm Mới",function()
         Playerslist = {}
         SelectedPly:Clear()
         for i,v in pairs(game:GetService("Players"):GetChildren()) do  
@@ -8875,7 +8875,7 @@ Playerslist = {}
         end
     end)
 
-P:Toggle("Spectate Player",_G.Spectate_Player,function(value)
+P:Toggle("Theo Dõi Player",_G.Spectate_Player,function(value)
  _G.Spectate_Player = value
 end)
 
@@ -8894,7 +8894,7 @@ spawn(function()
 	end
 end)
 
-P:Toggle("Teleport to Player",_G.Teleport_to_Player,function(value)
+P:Toggle("Dịch Chuyển Đến Player",_G.Teleport_to_Player,function(value)
  _G.Teleport_to_Player = value
 StopTween(_G.Teleport_to_Player)
 end)
@@ -8912,7 +8912,7 @@ spawn(function()
 	end
 end)
 
-P:Toggle("Auto Kill Player [Melee]",_G.Auto_Kill_Player_Melee,function(value)
+P:Toggle("Kill Player [Melee]",_G.Auto_Kill_Player_Melee,function(value)
  _G.Auto_Kill_Player_Melee = value
 StopTween(_G.Auto_Kill_Player_Melee)
 end)
@@ -8944,7 +8944,7 @@ spawn(function()
 	end
 end)
 
-P:Toggle("Auto Kill Player [Gun]",_G.Auto_Kill_Player_Gun,function(value)
+P:Toggle("Kill Player [Gun]",_G.Auto_Kill_Player_Gun,function(value)
  _G.Auto_Kill_Player_Gun = value
 StopTween(_G.Auto_Kill_Player_Gun)
 end)
@@ -8982,22 +8982,22 @@ spawn(function()
 	end
 end)
 
-Teleport:Seperator(" WORLD ")
+Teleport:Seperator(" World ")
  
- Teleport:Button("Teleport To Old World",function()
+ Teleport:Button("Đi Đến Sea 1",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
   end)
  
- Teleport:Button("Teleport To Second Sea",function()
+ Teleport:Button("Đi Đến Sea 2",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
  end)
 
  
- Teleport:Button("Teleport To Third Sea",function()
+ Teleport:Button("Đi Đến Sea 3",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
   end)
  
- Teleport:Button("Teleport to Seabeast",function()
+ Teleport:Button("Dịch Chuyển Đến Sea",function()
   for i,v in pairs(game:GetService("Workspace").SeaBeasts:GetChildren()) do
   if v:FindFirstChild("HumanoidRootPart") then
   topos(v.HumanoidRootPart.CFrame*CFrame.new(0,100,0))
@@ -9005,10 +9005,10 @@ Teleport:Seperator(" WORLD ")
   end
  end)
  
- Teleport:Seperator(" Island ")
+ Teleport:Seperator(" Tele Đảo ")
  
  if World1 then
- Teleport:Dropdown("Select Island", {
+ Teleport:Dropdown("Chọn Đảo", {
   "WindMill",
   "Marine",
   "Middle Town",
@@ -9033,7 +9033,7 @@ Teleport:Seperator(" WORLD ")
  end
  
  if World2 then
- Teleport:Dropdown("Select Island", {
+ Teleport:Dropdown("Chọn Đảo", {
   "The Cafe",
   "Frist Spot",
   "Dark Area",
@@ -9056,7 +9056,7 @@ Teleport:Seperator(" WORLD ")
  end
  
  if World3 then
- Teleport:Dropdown("Select Island", {
+ Teleport:Dropdown("Chọn Đảo", {
   "Mansion",
   "Port Town",
   "Great Tree",
@@ -9472,11 +9472,11 @@ Teleport:Seperator(" WORLD ")
 end)
 
 if World1 then
-    Dungeon:Label("Dungeon Raid Only Available At Sea 2 and 3")
+    Dungeon:Label("Sang Sea 2 Hoặc Sea 3 Mới Raid Được")
 end
 
 if World2 or World3 then
-Dungeon:Seperator("Use in Dungeon Only!")
+Dungeon:Seperator("Chỉ Dùng Để Raid")
 
 chip = {
 	"Flame", 
@@ -9492,11 +9492,11 @@ chip = {
 	"Bird: Phoenix"
 }
 
-Dungeon:Dropdown("Select Dungeon",chip,function(value)
+Dungeon:Dropdown("Chọn Map Raid",chip,function(value)
  _G.Select_Dungeon = value
 end)
 
-Dungeon:Toggle("Auto Buy Chip Dungeon",_G.Auto_Buy_Chips_Dungeon,function(value)
+Dungeon:Toggle("Mua Chip Đã Chọn",_G.Auto_Buy_Chips_Dungeon,function(value)
  _G.Auto_Buy_Chips_Dungeon = value
 end)
 
@@ -9518,7 +9518,7 @@ spawn(function()
 end)
 
 
-Dungeon:Toggle("Auto Start Dungeon",_G.Auto_StartRaid,function(value)
+Dungeon:Toggle("Auto Start Raid",_G.Auto_StartRaid,function(value)
  _G.Auto_StartRaid = value
 end)
 
@@ -9668,9 +9668,9 @@ function topos(Pos)
 end
 end
 
-Dungeon:Seperator("\\\\\  Law Dungeon  //")
+Dungeon:Seperator(" Raid Law ")
 
-Dungeon:Toggle("Auto Buy Law Chip",_G.Auto_Buy_Law_Chip,function(value)
+Dungeon:Toggle("Auto Mua Chip Raid Law",_G.Auto_Buy_Law_Chip,function(value)
  _G.Auto_Buy_Law_Chip = value
 end)
 
@@ -9693,7 +9693,7 @@ spawn(function()
 	end
 end)
 
-Dungeon:Toggle("Auto Start Law Dungeon",_G.Auto_Start_Law_Dungeon,function(value)
+Dungeon:Toggle("Auto Start Raid",_G.Auto_Start_Law_Dungeon,function(value)
  _G.Auto_Start_Law_Dungeon = value
 end)
 
@@ -9739,7 +9739,7 @@ spawn(function()
 end)
 end
  
- DevilFruit:Seperator(" Sniper ")
+ DevilFruit:Seperator(" Trái Blox ")
  
  FruitList = {
   "Bomb-Bomb",
@@ -9778,21 +9778,21 @@ end
  }
  
  _G.SelectFruit = ""
- DevilFruit:Dropdown("Select Fruits Sniper",FruitList,function(value)
+ DevilFruit:Dropdown("Chọn Trái Blox",FruitList,function(value)
   _G.SelectFruit = value
   end)
  
- DevilFruit:Toggle("Auto Buy Fruit Sniper",_G.AutoBuyFruitSniper,function(value)
+ DevilFruit:Toggle("Tự Động Mua Khi Bán",_G.AutoBuyFruitSniper,function(value)
   _G.AutoBuyFruitSniper = value
   end)
  
- DevilFruit:Seperator(" Others ")
+ DevilFruit:Seperator(" Khác ")
  
- DevilFruit:Dropdown("Select Fruits Eat",FruitList,function(value)
+ DevilFruit:Dropdown("Chọn Fruit",FruitList,function(value)
   _G.SelectFruitEat = value
   end)
  
- DevilFruit:Toggle("Auto Eat Fruit",_G.AutoEatFruit,function(value)
+ DevilFruit:Toggle("Auto Ăn Trái Blox",_G.AutoEatFruit,function(value)
   _G.AutoEatFruit = value
   end)
  
@@ -9818,7 +9818,7 @@ end
    end)
   end)
  
- DevilFruit:Toggle("Auto Random Fruit",_G.Random_Auto,function(value)
+ DevilFruit:Toggle("Tự Động Random Trái Blox",_G.Random_Auto,function(value)
   _G.Random_Auto = value
   end)
  
@@ -9837,7 +9837,7 @@ end
   end)
  
  
- DevilFruit:Toggle("Auto Drop Fruit",_G.DropFruit,function(value)
+ DevilFruit:Toggle("Auto Vứt Fruit",_G.DropFruit,function(value)
   _G.DropFruit = value
   end)
  
@@ -9872,7 +9872,7 @@ end
   end
   end)
  
- DevilFruit:Toggle("Auto Store Fruit",_G.AutoStoreFruit,function(value)
+ DevilFruit:Toggle("Tự Động Cất Trái Blox",_G.AutoStoreFruit,function(value)
   _G.AutoStoreFruit = value
   end)
  
@@ -9893,7 +9893,7 @@ end
 		end)
  
  
- DevilFruit:Toggle("Grab Fruit",_G.BringFruit,function(value)
+ DevilFruit:Toggle("Nhặt Trái Blox Thằng Khác Drop",_G.BringFruit,function(value)
   _G.BringFruit = value
   pcall(function()
    while _G.BringFruit do wait(.1)
@@ -9910,7 +9910,7 @@ end
    end)
  end)
  
- DevilFruit:Toggle("Teleport To Spawn Fruit",false,function(value)
+ DevilFruit:Toggle("Nhặt Trái Blox Spawm",false,function(value)
  _G.Grabfruit = value
 end)
 
@@ -9925,7 +9925,7 @@ spawn(function()
 				end
 end
 end)
- DevilFruit:Toggle("Bring All Fruit 75% Kick System",_G.BringFruitBF,function(value)
+ DevilFruit:Toggle("Nhặt Hết Trái Trên Map [75% kick]",_G.BringFruitBF,function(value)
   _G.BringFruitBF = value
   end)
  
@@ -10148,7 +10148,7 @@ function UpdateIslandESP()
  DevilFruit:Seperator(" ESP ")
   
 if World2 then
-		DevilFruit:Button("TP Flower Red",function()
+		DevilFruit:Button("Tìm Hoa Đỏ",function()
 			for i,v in pairs(game.Workspace:GetDescendants()) do
 				if v.Name == "Flower2" then
 				    topos(v.CFrame)
@@ -10156,7 +10156,7 @@ if World2 then
 			end
 		end)
 
-		DevilFruit:Button("TP Flower Blue",function()
+		DevilFruit:Button("Tìm Hoa Xanh",function()
 			for i,v in pairs(game.Workspace:GetDescendants()) do
 				if v.Name == "Flower1" then
 					topos(v.CFrame)
@@ -10331,7 +10331,7 @@ if World2 then
 			end)
 		end
 	end
-	DevilFruit:Toggle("Esp Player",false,function(a)
+	DevilFruit:Toggle("ESP Player",false,function(a)
 		ESPPlayer = a
 		while ESPPlayer do wait()
 			UpdatePlayerChams()
@@ -10343,7 +10343,7 @@ if World2 then
 			UpdateChestChams() 
 		end
 	end)
-	DevilFruit:Toggle("ESP Devil Fruit",false,function(a)
+	DevilFruit:Toggle("ESP Fruit",false,function(a)
 		DevilFruitESP = a
 		while DevilFruitESP do wait()
 			UpdateDevilChams() 
@@ -10359,23 +10359,23 @@ if World2 then
  
  Shop:Seperator(" Abilities ")
  
- Shop:Button("Buy Geppo",function()
+ Shop:Button("Mua Geppo",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
   end)
  
- Shop:Button("Buy Buso Haki",function()
+ Shop:Button("Mua Haki Vũ Trang",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
   end)
  
- Shop:Button("Buy Soru",function()
+ Shop:Button("Mua Soru",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
   end)
  
- Shop:Button("Buy Observation(Ken) Haki",function()
+ Shop:Button("Mua Haki Quan Sát",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
   end)
  
- Shop:Seperator(" Fighting Style ")
+ Shop:Seperator(" Melee ")
  
  Shop:Button("Buy Black Leg",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
@@ -10593,7 +10593,7 @@ Misc:Button("Devil Fruit Shop",function()
 end)
 
 
-Misc:Button("Title Name",function()
+Misc:Button("Title",function()
  local args = {
 			[1] = "getTitles"
 		}
@@ -10664,11 +10664,11 @@ local x2Code = {
 Misc:Seperator(" Player Misc ")
     
     
-    Misc:Dropdown("Select Haki State",{"State 0","State 1","State 2","State 3","State 4","State 5"},function(value)
+    Misc:Dropdown("Chọn Cấp Haki",{"State 0","State 1","State 2","State 3","State 4","State 5"},function(value)
         _G.SelectStateHaki = value
     end)
     
-    Misc:Button("Change Buso Haki State",function()
+    Misc:Button("Thay Đổi Cấp Haki",function()
         if _G.SelectStateHaki == "State 0" then
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("ChangeBusoStage",0)
         elseif _G.SelectStateHaki == "State 1" then
@@ -10749,7 +10749,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         NoDodgeCool()
     end)
     
-    Misc:Toggle("Auto Active Race",_G.AutoAgility,function(value)
+    Misc:Toggle("Tự Bật Tộc V3",_G.AutoAgility,function(value)
         _G.AutoAgility = value
     end)
     
@@ -10763,7 +10763,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end)
     end)
     
-    Misc:Toggle("Infinite Ability",false,function(value)
+    Misc:Toggle("Chạy Nhanh",true,function(value)
         InfAbility = value
         if value == false then
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
@@ -10778,7 +10778,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end
     end)
     
-    Misc:Toggle("Infinite Obversation Range",getgenv().InfiniteObRange,function(value)
+    Misc:Toggle("Tăng Tầm Haki Quan Sát",getgenv().InfiniteObRange,function(value)
         getgenv().InfiniteObRange = value
         local VS = game:GetService("Players").LocalPlayer.VisionRadius.Value
         while getgenv().InfiniteObRange do
@@ -10849,12 +10849,12 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end
     end)
     
-    Misc:Toggle("Walk on Water",true,function(value)
+    Misc:Toggle("Đi Trên Biển",true,function(value)
         _G.WalkWater = value
     end)
     
     if World2 then
-		Misc:Button("Remove Lava",function()
+		Misc:Button("Xóa Lava",function()
 			for i,v in pairs(game.Workspace:GetDescendants()) do
 				if v.Name == "Lava" then   
 					v:Destroy()
@@ -10879,7 +10879,7 @@ spawn(function()
 				end)
 			end
 		end)
-    Misc:Toggle("Fly",false,function(value)
+    Misc:Toggle("Bay",false,function(value)
         Fly = value
     end)
     
@@ -10895,7 +10895,7 @@ spawn(function()
     
         
     Misc:Button("Unlock FPS",function()
-        setfpscap(100)
+        setfpscap(240)
     end)
 Misc:Button("Invisible",function()
         game:GetService("Players").LocalPlayer.Character.LowerTorso:Destroy()
@@ -10907,26 +10907,26 @@ Op:Label("Name : "..game.Players.LocalPlayer.Name)
 
 
 if W then
-Op:Label("World : 1")
+Op:Label("Sea: 1")
 end
 
 if W2 then
-Op:Label("World : 2")
+Op:Label("Sea: 2")
 end
 
 if W3 then
-Op:Label("World : 3")
+Op:Label("Sea: 3")
 end
 
-Op:Label("Race : "..game:GetService("Players").LocalPlayer.Data.Race.Value)
+Op:Label("Tộc: "..game:GetService("Players").LocalPlayer.Data.Race.Value)
 
-Op:Label("Fruit : "..game.Players.LocalPlayer.Data.DevilFruit.Value)
+Op:Label("Trái Ác Quỷ: "..game.Players.LocalPlayer.Data.DevilFruit.Value)
 
-Op:Label("Level : "..game.Players.localPlayer.Data.Level.Value)
+Op:Label("Cấp Độ: "..game.Players.localPlayer.Data.Level.Value)
 
-Op:Label("Bounty : "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
+Op:Label("Bounty: "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
 
-Op:Seperator("\\\\\  Sword  //")
+Op:Seperator(" [ Sword ] ")
 
 local Saber = Op:Label("❌: Saber")
 local Rengoku = Op:Label("❌: Rengoku")
@@ -10986,7 +10986,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator("\\\\\  Quest  //")
+Op:Seperator(" [ Quest ] )
 
 local Bartilo_Quest = Op:Label("❌: Bartilo Quest")
 local Don_Swan_Quest = Op:Label("❌: Don Swan Quest")
@@ -11010,7 +11010,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator("\\\\\  Sword Legendary  //")
+Op:Seperator(" [ Sword Legendary ] ")
 
 local Shisui = Op:Label("❌: Shisui")
 local Saddi = Op:Label("❌: Saddi")
@@ -11038,7 +11038,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator("\\\\\  Melee  //")
+Op:Seperator(" [ Melee ] ")
 
 local Superhuman = Op:Label("❌: Superhuman")
 local Death_Step = Op:Label("❌: Death Step")
@@ -11067,7 +11067,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator("\\\\\  Gun  //")
+Op:Seperator(" [ Gun ] ")
 
 local Kabu_cha = Op:Label("❌: Kabucha")
 local Acidum_Rifle = Op:Label("❌: Acidum Rifle")
@@ -11093,7 +11093,7 @@ end)
 
 
 
-Op:Seperator("\\\\\  Accessory  //")
+Op:Seperator(" [ Accessory ] ")
 
 local Dark_Coat = Op:Label("❌: Dark Coat")
 local Ghoul_Mask = Op:Label("❌: Ghoul Mask")
