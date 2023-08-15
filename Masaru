@@ -3956,7 +3956,7 @@ end)
 spawn(function()
     while wait() do
         if _G.Auto_Farm_Level then
-			if _G.Select_Mode_Farm == "Level Farm" then
+			if _G.Select_Mode_Farm == "Farm Level" then
 				pcall(function()
 					if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameMon) then
 						StartMagnet = false
@@ -4008,7 +4008,7 @@ spawn(function()
 						end
 					end
 				end)
-			elseif _G.Select_Mode_Farm == "Fast Mode" then
+			elseif _G.Select_Mode_Farm == "Farm Nhanh" then
 				pcall(function()
 					if game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT then
 						if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameMon) then
@@ -4098,7 +4098,7 @@ spawn(function()
 						end
 					end
 				end)
-elseif _G.Select_Mode_Farm == "Near Farm Mode" then
+elseif _G.Select_Mode_Farm == "Farm Gần" then
   for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
   if v.Name and v:FindFirstChild("Humanoid") then
   if v.Humanoid.Health > 0 then
