@@ -10,7 +10,7 @@ openshit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 mainopen.Name = "mainopen"
 mainopen.Parent = openshit
-mainopen.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+mainopen.BackgroundColor3 = Color3.fromRGB(26, 27, 69)
 mainopen.Position = UDim2.new(0.101969875, 0, 0.110441767, 0)
 mainopen.Size = UDim2.new(0, 64, 0, 42)
 mainopen.Text = ""
