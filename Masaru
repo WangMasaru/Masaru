@@ -328,8 +328,8 @@ mainopens.Parent = mainopen
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
- Hub.Text = "| VH |"
- Hub.TextColor3 = Color3.fromRGB(0,255,0)
+ Hub.Text = "Masaru HUB"
+ Hub.TextColor3 = Color3.fromRGB(120,255,120)
  Hub.TextSize = 16.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -3799,7 +3799,7 @@ end)
 
  
 --------------------------------------------------------------------
-local Library = Update:Window("Masaru HUB","")
+local Library = Update:Window("","")
 ------------------------------------------
 
 spawn(function()
