@@ -10895,7 +10895,7 @@ spawn(function()
     
         
     Misc:Button("Unlock FPS",function()
-        setfpscap(240)
+        setfpscap(100)
     end)
 Misc:Button("Invisible",function()
         game:GetService("Players").LocalPlayer.Character.LowerTorso:Destroy()
@@ -10907,26 +10907,26 @@ Op:Label("Name : "..game.Players.LocalPlayer.Name)
 
 
 if W then
-Op:Label("Sea: 1")
+Op:Label("World : 1")
 end
 
 if W2 then
-Op:Label("Sea: 2")
+Op:Label("World : 2")
 end
 
 if W3 then
-Op:Label("Sea: 3")
+Op:Label("World : 3")
 end
 
-Op:Label("Tộc: "..game:GetService("Players").LocalPlayer.Data.Race.Value)
+Op:Label("Race : "..game:GetService("Players").LocalPlayer.Data.Race.Value)
 
-Op:Label("Trái Ác Quỷ: "..game.Players.LocalPlayer.Data.DevilFruit.Value)
+Op:Label("Fruit : "..game.Players.LocalPlayer.Data.DevilFruit.Value)
 
-Op:Label("Cấp Độ: "..game.Players.localPlayer.Data.Level.Value)
+Op:Label("Level : "..game.Players.localPlayer.Data.Level.Value)
 
-Op:Label("Bounty: "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
+Op:Label("Bounty : "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
 
-Op:Seperator(" [ Sword ] ")
+Op:Seperator("\\\\\  Sword  //")
 
 local Saber = Op:Label("❌: Saber")
 local Rengoku = Op:Label("❌: Rengoku")
@@ -10986,7 +10986,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator(" [ Quest ] )
+Op:Seperator("\\\\\  Quest  //")
 
 local Bartilo_Quest = Op:Label("❌: Bartilo Quest")
 local Don_Swan_Quest = Op:Label("❌: Don Swan Quest")
@@ -11010,7 +11010,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator(" [ Sword Legendary ] ")
+Op:Seperator("\\\\\  Sword Legendary  //")
 
 local Shisui = Op:Label("❌: Shisui")
 local Saddi = Op:Label("❌: Saddi")
@@ -11038,7 +11038,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator(" [ Melee ] ")
+Op:Seperator("\\\\\  Melee  //")
 
 local Superhuman = Op:Label("❌: Superhuman")
 local Death_Step = Op:Label("❌: Death Step")
@@ -11067,7 +11067,7 @@ spawn(function()
     end
 end)
 
-Op:Seperator(" [ Gun ] ")
+Op:Seperator("\\\\\  Gun  //")
 
 local Kabu_cha = Op:Label("❌: Kabucha")
 local Acidum_Rifle = Op:Label("❌: Acidum Rifle")
@@ -11093,7 +11093,7 @@ end)
 
 
 
-Op:Seperator(" [ Accessory ] ")
+Op:Seperator("\\\\\  Accessory  //")
 
 local Dark_Coat = Op:Label("❌: Dark Coat")
 local Ghoul_Mask = Op:Label("❌: Ghoul Mask")
