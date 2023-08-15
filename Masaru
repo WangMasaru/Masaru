@@ -4488,7 +4488,7 @@ require(game.ReplicatedStorage.Util.CameraShaker):Stop()
 
 xShadowFastAttackx = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
 
-xShadowx = debug.getupvalues(xShadowFastAttackx)[3]
+xShadowx = debug.getupvalues(xShadowFastAttackx)[2]
 
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
@@ -4497,7 +4497,7 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 210
+                    xShadowx.activeController.hitboxMagnitude = 200
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
