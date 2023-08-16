@@ -9910,7 +9910,7 @@ end
    end)
  end)
  
- DevilFruit:Toggle("Nhặt Trái Blox",false,function(value)
+ DevilFruit:Toggle("Nhặt Trái Blox Spawm",false,function(value)
  _G.Grabfruit = value
 end)
 
@@ -10343,40 +10343,38 @@ if World2 then
 			UpdateChestChams() 
 		end
 	end)
-
-	DevilFruit:Toggle("ESP Flower",false,function(a)
-		FlowerESP = a
-		while FlowerESP do wait()
-			UpdateFlowerChams() 
-		end
-	end)
 	DevilFruit:Toggle("ESP Fruit",true,function(a)
 		DevilFruitESP = a
 		while DevilFruitESP do wait()
 			UpdateDevilChams() 
 		end
 	end)
+	DevilFruit:Toggle("ESP Flower",true,function(a)
+		FlowerESP = a
+		while FlowerESP do wait()
+			UpdateFlowerChams() 
+		end
+	end)
 	
- 
  Shop:Seperator(" Abilities ")
  
- Shop:Button("Mua Geppo",function()
+ Shop:Button("Buy Geppo",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
   end)
  
- Shop:Button("Mua Haki Vũ Trang",function()
+ Shop:Button("Buy Buso Haki",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
   end)
  
- Shop:Button("Mua Soru",function()
+ Shop:Button("Buy Soru",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
   end)
  
- Shop:Button("Mua Haki Quan Sát",function()
+ Shop:Button("Buy Observation(Ken) Haki",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
   end)
  
- Shop:Seperator(" Melee ")
+ Shop:Seperator(" Fighting Style ")
  
  Shop:Button("Buy Black Leg",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
@@ -10594,7 +10592,7 @@ Misc:Button("Devil Fruit Shop",function()
 end)
 
 
-Misc:Button("Title",function()
+Misc:Button("Title Name",function()
  local args = {
 			[1] = "getTitles"
 		}
@@ -10665,11 +10663,11 @@ local x2Code = {
 Misc:Seperator(" Player Misc ")
     
     
-    Misc:Dropdown("Chọn Cấp Haki",{"State 0","State 1","State 2","State 3","State 4","State 5"},function(value)
+    Misc:Dropdown("Select Haki State",{"State 0","State 1","State 2","State 3","State 4","State 5"},function(value)
         _G.SelectStateHaki = value
     end)
     
-    Misc:Button("Thay Đổi Cấp Haki",function()
+    Misc:Button("Change Buso Haki State",function()
         if _G.SelectStateHaki == "State 0" then
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("ChangeBusoStage",0)
         elseif _G.SelectStateHaki == "State 1" then
@@ -10750,7 +10748,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         NoDodgeCool()
     end)
     
-    Misc:Toggle("Tự Bật Tộc V3",_G.AutoAgility,function(value)
+    Misc:Toggle("Auto Active Race",_G.AutoAgility,function(value)
         _G.AutoAgility = value
     end)
     
@@ -10764,7 +10762,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end)
     end)
     
-    Misc:Toggle("Chạy Nhanh",true,function(value)
+    Misc:Toggle("Infinite Ability",false,function(value)
         InfAbility = value
         if value == false then
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
@@ -10779,7 +10777,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end
     end)
     
-    Misc:Toggle("Tăng Tầm Haki Quan Sát",getgenv().InfiniteObRange,function(value)
+    Misc:Toggle("Infinite Obversation Range",getgenv().InfiniteObRange,function(value)
         getgenv().InfiniteObRange = value
         local VS = game:GetService("Players").LocalPlayer.VisionRadius.Value
         while getgenv().InfiniteObRange do
@@ -10850,12 +10848,12 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end
     end)
     
-    Misc:Toggle("Đi Trên Biển",true,function(value)
+    Misc:Toggle("Walk on Water",true,function(value)
         _G.WalkWater = value
     end)
     
     if World2 then
-		Misc:Button("Xóa Lava",function()
+		Misc:Button("Remove Lava",function()
 			for i,v in pairs(game.Workspace:GetDescendants()) do
 				if v.Name == "Lava" then   
 					v:Destroy()
@@ -10880,7 +10878,7 @@ spawn(function()
 				end)
 			end
 		end)
-    Misc:Toggle("Bay",false,function(value)
+    Misc:Toggle("Fly",false,function(value)
         Fly = value
     end)
     
