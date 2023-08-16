@@ -318,7 +318,7 @@ mainopens.Parent = mainopen
  Name.Font = Enum.Font.Code
  Name.Text = text
  Name.TextColor3 = Color3.fromRGB(240, 158, 255)
- Name.TextSize = 14.000
+ Name.TextSize = 14.200
  
  local Hub = Instance.new("TextLabel")
  Hub.Name = "Hub"
@@ -328,9 +328,9 @@ mainopens.Parent = mainopen
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
- Hub.Text = "Masaru HUB"
+ Hub.Text = "ㅤㅤMasaru HUB"
  Hub.TextColor3 = Color3.fromRGB(255,196,102)
- Hub.TextSize = 18.000
+ Hub.TextSize = 19.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
  
@@ -448,8 +448,8 @@ mainopens.Parent = mainopen
  TabButton.BackgroundTransparency = 1.000
  TabButton.Size = UDim2.new(0, 130, 0, 23)
  TabButton.Font = Enum.Font.Gotham
- TabButton.TextColor3 = Color3.fromRGB(225, 225, 225)
- TabButton.TextSize = 11.000
+ TabButton.TextColor3 = Color3.fromRGB(219, 96, 201)
+ TabButton.TextSize = 11.200
  TabButton.TextTransparency = 0.100
  
  local TabFrame = Instance.new("Frame")
@@ -707,7 +707,7 @@ end
  
  Button.Name = "Button"
  Button.Parent = MainFramePage
- Button.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
+ Button.BackgroundColor3 = Color3.fromRGB(219, 96, 201)
  Button.BackgroundTransparency = 1
  Button.Size = UDim2.new(0, 310, 0, 31)
  
@@ -929,7 +929,7 @@ end
  DropTitle.Size = UDim2.new(0, 310, 0, 31)
  DropTitle.Font = Enum.Font.Gotham
  DropTitle.Text = text.. " : "
- DropTitle.TextColor3 = Color3.fromRGB(225, 225, 225)
+ DropTitle.TextColor3 = Color3.fromRGB(219, 96, 201)
  DropTitle.TextSize = 12.000
  
  DropScroll.Name = "DropScroll"
@@ -968,7 +968,7 @@ end
  DropButton.Font = Enum.Font.SourceSans
  DropButton.Text = ""
  DropButton.TextColor3 = Color3.fromRGB(0, 0, 0)
- DropButton.TextSize = 14.000
+ DropButton.TextSize = 14.200
  
  for i,v in next,option do
  local Item = Instance.new("TextButton")
@@ -980,7 +980,7 @@ end
  Item.Size = UDim2.new(0, 310, 0, 26)
  Item.Font = Enum.Font.Gotham
  Item.Text = tostring(v)
- Item.TextColor3 = Color3.fromRGB(225, 225, 225)
+ Item.TextColor3 = Color3.fromRGB(219, 96, 201)
  Item.TextSize = 13.000
  Item.TextTransparency = 0.500
  
@@ -1055,7 +1055,7 @@ end
  Item.Size = UDim2.new(0, 310, 0, 26)
  Item.Font = Enum.Font.Gotham
  Item.Text = tostring(t)
- Item.TextColor3 = Color3.fromRGB(225, 225, 225)
+ Item.TextColor3 = Color3.fromRGB(219, 96, 201)
  Item.TextSize = 13.000
  Item.TextTransparency = 0.500
  
@@ -1542,7 +1542,7 @@ end
  AHEHE.Font = Enum.Font.SourceSans
  AHEHE.Text = ""
  AHEHE.TextColor3 = Color3.fromRGB(0, 0, 0)
- AHEHE.TextSize = 14.000
+ AHEHE.TextSize = 14.200
  
  bar.Name = "bar"
  bar.Parent = AHEHE
@@ -1700,7 +1700,7 @@ end
  TextboxLabel.Text = text
  TextboxLabel.Size = UDim2.new(0, 145, 0, 31)
  TextboxLabel.Font = Enum.Font.Gotham
- TextboxLabel.TextColor3 = Color3.fromRGB(225, 225, 225)
+ TextboxLabel.TextColor3 = Color3.fromRGB(219, 96, 201)
  TextboxLabel.TextSize = 16.000
  TextboxLabel.TextTransparency = 0
  TextboxLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -1714,7 +1714,7 @@ end
  txtbtn.Font = Enum.Font.SourceSans
  txtbtn.Text = ""
  txtbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
- txtbtn.TextSize = 14.000
+ txtbtn.TextSize = 14.200
  
  RealTextbox.Name = "RealTextbox"
  RealTextbox.Parent = Textbox
@@ -1724,8 +1724,8 @@ end
  RealTextbox.Size = UDim2.new(0, 100, 0, 24)
  RealTextbox.Font = Enum.Font.Gotham
  RealTextbox.Text = ""
- RealTextbox.TextColor3 = Color3.fromRGB(225, 225, 225)
- RealTextbox.TextSize = 11.000
+ RealTextbox.TextColor3 = Color3.fromRGB(219, 96, 201)
+ RealTextbox.TextSize = 11.200
  RealTextbox.TextTransparency = 0
  
  RealTextbox.FocusLost:Connect(function()
@@ -1749,7 +1749,7 @@ end
  Label.BackgroundTransparency = 1.000
  Label.Size = UDim2.new(0, 325, 0, 20)
  Label.Font = Enum.Font.Gotham
- Label.TextColor3 = Color3.fromRGB(225, 225, 225)
+ Label.TextColor3 = Color3.fromRGB(219, 96, 201)
  Label.TextSize = 12.000
  Label.Text = text
  Label.TextXAlignment = Enum.TextXAlignment.Left
@@ -1775,7 +1775,7 @@ end
  Label1.BackgroundTransparency = 1.000
  Label1.Size = UDim2.new(0, 325, 0, 20)
  Label1.Font = Enum.Font.Gotham
- Label1.TextColor3 = Color3.fromRGB(225, 225, 225)
+ Label1.TextColor3 = Color3.fromRGB(219, 96, 201)
  Label1.TextSize = 12.000
  Label1.Text = text
  Label1.TextXAlignment = Enum.TextXAlignment.Left
@@ -1818,7 +1818,7 @@ function main:Seperator(text)
  Sep2.Font = Enum.Font.Gotham
  Sep2.Text = text
  Sep2.TextColor3 = Color3.fromRGB(240, 158, 217)
- Sep2.TextSize = 14.000
+ Sep2.TextSize = 14.200
  
  Sep3.Name = "Sep3"
  Sep3.Parent = Seperator
