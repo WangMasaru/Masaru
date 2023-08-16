@@ -96,10 +96,10 @@ mainopens.Parent = mainopen
   end
  )
  end
- _G.BGColor_1 = Color3.fromRGB(30,30,30)
+ _G.BGColor_1 = Color3.fromRGB(64,111,133)
  _G.BGColor_2 = Color3.fromRGB(20, 20, 20)
  _G.Color = Color3.fromRGB(240,237,201)
- _G.WindowBackgroundColor = Color3.fromRGB(12,12,12)
+ _G.WindowBackgroundColor = Color3.fromRGB(21, 19, 23)
  _G.BackgroundItemColor = Color3.fromRGB(20, 20, 20)
  _G.TabWindowColor = Color3.fromRGB(30, 30, 30)
  _G.ContainerColor = Color3.fromRGB(30, 30, 30)
@@ -179,7 +179,7 @@ mainopens.Parent = mainopen
         txdlid.Size =UDim2.new(0, 160, 0,25 )
         txdlid.Font = Enum.Font.Code
         txdlid.Text = titel
-        txdlid.TextColor3 = Color3.fromRGB(30,30,30)
+        txdlid.TextColor3 = Color3.fromRGB(64,111,133)
         txdlid.TextSize = 17.000
         txdlid.AnchorPoint = Vector2.new(0.5, 0.5)
         txdlid.Position = UDim2.new(0.23, 0, 0.3, 0)
@@ -202,7 +202,7 @@ mainopens.Parent = mainopen
     
         TextNoti.Parent = LableFrame
         TextNoti.Name = "TextLabel_Tap"
-        TextNoti.BackgroundColor3 = Color3.fromRGB(30,30,30)
+        TextNoti.BackgroundColor3 = Color3.fromRGB(64,111,133)
         TextNoti.Size =UDim2.new(0, 260, 0,25 )
         TextNoti.Font = Enum.Font.Code
         TextNoti.Text = text
@@ -390,7 +390,7 @@ mainopens.Parent = mainopen
  local Page = Instance.new("Frame")
  Page.Name = "Page"
  Page.Parent = Main
- Page.BackgroundColor3 = Color3.fromRGB(30,30,30)
+ Page.BackgroundColor3 = Color3.fromRGB(64,111,133)
  Page.Position = UDim2.new(0.295726834, 0, 0.144050003, 0)
  Page.Size = UDim2.new(0, 330, 0, 280)
  
@@ -794,7 +794,7 @@ end
  
  CheckFrame2.Name = "CheckFrame2"
  CheckFrame2.Parent = CheckFrame
- CheckFrame2.BackgroundColor3 = Color3.fromRGB(30,30,30)
+ CheckFrame2.BackgroundColor3 = Color3.fromRGB(64,111,133)
  CheckFrame2.BackgroundTransparency = 1
  CheckFrame2.BorderSizePixel = 0
  CheckFrame2.Position = UDim2.new(0, 3, 0, 0)
@@ -1506,7 +1506,7 @@ end
  sliderr.Name = "sliderr"
  sliderr.Parent = Slider
  sliderr.BackgroundTransparency = 0
- sliderr.BackgroundColor3 = Color3.fromRGB(30,30,30)
+ sliderr.BackgroundColor3 = Color3.fromRGB(64,111,133)
  sliderr.Position = UDim2.new(0, 1, 0, 1)
  sliderr.Size = UDim2.new(0, 308, 0, 49)
  
@@ -1684,7 +1684,7 @@ end
  
  Textboxx.Name = "Textboxx"
  Textboxx.Parent = Textbox
- Textboxx.BackgroundColor3 = Color3.fromRGB(30,30,30)
+ Textboxx.BackgroundColor3 = Color3.fromRGB(64,111,133)
  Textboxx.Position = UDim2.new(0, 1, 0, 1)
  Textboxx.Size = UDim2.new(0, 310, 0, 29)
  
