@@ -10,7 +10,7 @@ openshit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 mainopen.Name = "mainopen"
 mainopen.Parent = openshit
-mainopen.BackgroundColor3 = Color3.fromRGB(37, 39, 41)
+mainopen.BackgroundColor3 = Color3.fromRGB(36, 35, 38)
 mainopen.Position = UDim2.new(0.101969875, 0, 0.110441767, 0)
 mainopen.Size = UDim2.new(0, 64, 0, 42)
 mainopen.Text = ""
@@ -291,7 +291,7 @@ mainopens.Parent = mainopen
  local Top = Instance.new("Frame")
  Top.Name = "Top"
  Top.Parent = Main
- Top.BackgroundColor3 = Color3.fromRGB(37, 39, 41)
+ Top.BackgroundColor3 = Color3.fromRGB(36, 35, 38)
  --Top.Size = UDim2.new(0, 656, 0, 27)
  Top.Size = UDim2.new(0, 480, 0, 27)
  
@@ -329,7 +329,7 @@ mainopens.Parent = mainopen
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
  Hub.Text = "Masaru HUB"
- Hub.TextColor3 = Color3.fromRGB(165,120,255)
+ Hub.TextColor3 = Color3.fromRGB(255,196,102)
  Hub.TextSize = 18.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -348,7 +348,7 @@ mainopens.Parent = mainopen
  local Tab = Instance.new("Frame")
  Tab.Name = "Tab"
  Tab.Parent = Main
- Tab.BackgroundColor3 = Color3.fromRGB(37, 39, 41)
+ Tab.BackgroundColor3 = Color3.fromRGB(36, 35, 38)
  Tab.Position = UDim2.new(0, 5, 0, 30)
  --Tab.CornerRadius = UDim.new(0,5)
  Tab.Size = UDim2.new(0, 0, 0, 0)
@@ -1718,7 +1718,7 @@ end
  
  RealTextbox.Name = "RealTextbox"
  RealTextbox.Parent = Textbox
- RealTextbox.BackgroundColor3 = Color3.fromRGB(37, 39, 41)
+ RealTextbox.BackgroundColor3 = Color3.fromRGB(36, 35, 38)
  RealTextbox.BackgroundTransparency = 0
  RealTextbox.Position = UDim2.new(0, 230, 0, 4)
  RealTextbox.Size = UDim2.new(0, 100, 0, 24)
