@@ -323,14 +323,14 @@ mainopens.Parent = mainopen
  local Hub = Instance.new("TextLabel")
  Hub.Name = "Hub"
  Hub.Parent = Top
- Hub.BackgroundColor3 = Color3.fromRGB(110,166,250)
+ Hub.BackgroundColor3 = Color3.fromRGB(224,224,224)
  Hub.BackgroundTransparency = 1.000
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
  Hub.Text = "Masaru HUB"
  Hub.TextColor3 = Color3.fromRGB(46,157,255)
- Hub.TextSize = 17.000
+ Hub.TextSize = 16.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
  
@@ -4219,14 +4219,14 @@ end)
 local Main = Library:Tab("Main","rbxassetid://11446825283")
 local Weapon = Library:Tab("Weapons","rbxassetid://11446859498")
 local Race = Library:Tab("Race V4","rbxassetid://11446900930")
+local Stats = Library:Tab("Stats","rbxassetid://11447069304")
+local P = Library:Tab("Player","rbxassetid://11446900930")
 local Teleport = Library:Tab("Teleport","rbxassetid://11446920523")
 local Dungeon = Library:Tab("Dungeon","rbxassetid://11446957539")
-local Shop = Library:Tab("Shop","rbxassetid://6031265976")
 local DevilFruit = Library:Tab("Fruit+Esp","rbxassetid://11446965348")
-local P = Library:Tab("Player","rbxassetid://11446900930")
-local Stats = Library:Tab("Stats","rbxassetid://11447069304")
-local Setting = Library:Tab("Settings","rbxassetid://11446835336")
+local Shop = Library:Tab("Shop","rbxassetid://6031265976")
 local Misc = Library:Tab("Misc","rbxassetid://11447063791")
+local Setting = Library:Tab("Settings","rbxassetid://11446835336")
 local Op = Library:Tab("Status", "rbxassetid://7040410130")
 --------------------------------------------------------------------
 
@@ -4236,7 +4236,7 @@ Setting:Line()
 
 Setting:Button("Copy Link Facebook",function()
  
- setclipboard("https://www.facebook.com/profile.php?id=100091780962501")
+ setclipboard("https://discord.gg/yPQarTm4")
  end)
 
 Setting:Seperator(" Setting ")
@@ -4262,12 +4262,12 @@ Setting:Toggle("Anti AFK",true,function(value)
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
 _G.DistanceMob = 25
-Setting:Slider("Khoảng Cách Farm",1,100,20,function(value)
+Setting:Slider("Khoảng cách Farm",1,100,20,function(value)
  _G.DistanceMob = value
  end)
 else
  _G.DistanceMob = 25
-Setting:Slider1("Khoảng Cách Farm",1,100,20,function(value)
+Setting:Slider1("Farm Distance",1,100,20,function(value)
  _G.DistanceMob = value
  end)
 end
@@ -4427,7 +4427,7 @@ spawn(function()
 					if _G.Auto_Farm_Level and StartMagnet and v.Name == Ms and (v.HumanoidRootPart.Position - PosMon.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = PosMon
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+						v.HumanoidRootPart.Size = Vector3.new(55,55,55)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -4448,7 +4448,7 @@ spawn(function()
   pcall(function()
    if _G.BringExtra then
    for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-   if _G.Auto_Farm_Level and StartMagnet and v.Name ~= "Ice Admiral [Lv. 700] [Boss]" and v.Name ~= "Don Swan [Lv. 1000] [Boss]" and v.Name ~= "Saber Expert [Lv. 200] [Boss]" and v.Name ~= "Longma [Lv. 2000] [Boss]" and (v.HumanoidRootPart.Position - PosMon.Position).magnitude <= 350 then
+   if _G.Auto_Farm_Level and StartMagnet and v.Name ~= "Ice Admiral [Lv. 700] [Boss]" and v.Name ~= "Don Swan [Lv. 3000] [Boss]" and v.Name ~= "Saber Expert [Lv. 200] [Boss]" and v.Name ~= "Longma [Lv. 2000] [Boss]" and (v.HumanoidRootPart.Position - PosMon.Position).magnitude <= 350 then
    v.HumanoidRootPart.CFrame = PosMon
    v.HumanoidRootPart.CanCollide = false
    v.HumanoidRootPart.Size = Vector3.new(60,60,60)
@@ -4497,7 +4497,7 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 200
+                    xShadowx.activeController.hitboxMagnitude = 210
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
@@ -4609,12 +4609,12 @@ Setting:Seperator(" Mastery Setting ")
 
 if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
 _G.Kill_At = 20
-Setting:Slider("Kill Health",1,100,25,function(value)
+Setting:Slider("Kill Health [For Mastery]",1,100,25,function(value)
  _G.Kill_At = value
 end)
 else
 _G.Kill_At = 20
-Setting:Slider1("Kill Health",1,100,25,function(value)
+Setting:Slider1("Kill Health [For Mastery]",1,100,25,function(value)
  _G.Kill_At = value
 end)
 end
@@ -4641,7 +4641,7 @@ local GameTime = math.floor(workspace.DistributedGameTime+0.5)
 local Hour = math.floor(GameTime/(60^2))%24
 local Minute = math.floor(GameTime/(60^1))%60
 local Second = math.floor(GameTime/(60^0))%60
-Time:Set("[ TIME ] : ..Hour.." Giờ "..Minute.." Phút "..Second" Giây )
+Time:Set("[ TIME ] : Hours : "..Hour.." Minutes : "..Minute.." Seconds : "..Second)
 end
 
 spawn(function()
@@ -9476,7 +9476,7 @@ if World1 then
 end
 
 if World2 or World3 then
-Dungeon:Seperator("Raid Mode")
+Dungeon:Seperator("Chỉ Dùng Để Raid")
 
 chip = {
 	"Flame", 
@@ -9489,8 +9489,7 @@ chip = {
 	"Magma",
 	"Human: Buddha",
 	"Sand",
-	"Bird: Phoenix",
-        "Dough"
+	"Bird: Phoenix"
 }
 
 Dungeon:Dropdown("Chọn Map Raid",chip,function(value)
