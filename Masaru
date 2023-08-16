@@ -4218,14 +4218,14 @@ end)
 --------------------------
 local Main = Library:Tab("Main","rbxassetid://11446825283")
 local Weapon = Library:Tab("Weapons","rbxassetid://11446859498")
-local Race = Library:Tab("Race V4","rbxassetid://11446900930")
-local Stats = Library:Tab("Stats","rbxassetid://11447069304")
-local P = Library:Tab("Player","rbxassetid://11446900930")
-local Teleport = Library:Tab("Teleport","rbxassetid://11446920523")
 local Dungeon = Library:Tab("Dungeon","rbxassetid://11446957539")
+local Race = Library:Tab("Race V4","rbxassetid://11446900930")
+local Teleport = Library:Tab("Teleport","rbxassetid://11446920523")
 local DevilFruit = Library:Tab("Fruit+Esp","rbxassetid://11446965348")
+local P = Library:Tab("Player","rbxassetid://11446900930")
 local Shop = Library:Tab("Shop","rbxassetid://6031265976")
 local Misc = Library:Tab("Misc","rbxassetid://11447063791")
+local Stats = Library:Tab("Stats","rbxassetid://11447069304")
 local Setting = Library:Tab("Settings","rbxassetid://11446835336")
 local Op = Library:Tab("Status", "rbxassetid://7040410130")
 --------------------------------------------------------------------
@@ -5751,7 +5751,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 wait(1)
 Notification:Notify(
-   {Title = "FARINHA HUB", Description = "Bạn Đã Max Điểm Ken"},
+   {Title = "Masaru HUB", Description = "Bạn Đã Max Điểm Ken"},
    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "option"},
    {Image = "https://i.pinimg.com/564x/08/25/06/082506876327d31cb742bdfa55ebef87.jpg", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
 )
@@ -5908,11 +5908,11 @@ local Mob_Kill_Cake_Prince = Weapon:Label("Total")
 		while wait() do
 			pcall(function()
 				if string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 88 then
-					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41).." con quái")
+					Mob_Kill_Cake_Prince:Set("Đánh thêm "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41).." để spawm boss")
 				elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 87 then
-					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40).." con quái")
+					Mob_Kill_Cake_Prince:Set("Đánh thêm "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40).." để spawm boss")
 				elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
-					Mob_Kill_Cake_Prince:Set("Còn lại: "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39).." con quái")
+					Mob_Kill_Cake_Prince:Set("Đánh thêm "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39).." để spawm boss")
 				else
 					Mob_Kill_Cake_Prince:Set("Đã Có Katakuri!!!")
 				end
@@ -10762,7 +10762,7 @@ Misc:Toggle("Dodge No Cooldown",false,function(value)
         end)
     end)
     
-    Misc:Toggle("Infinite Ability",false,function(value)
+    Misc:Toggle("Infinite Ability",true,function(value)
         InfAbility = value
         if value == false then
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
