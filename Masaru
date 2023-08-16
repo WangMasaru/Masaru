@@ -10497,8 +10497,11 @@ if World2 then
  end)
  
  Shop:Button("Race Reroll",function()
-  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,3)
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy",1,3)
  end)
+ Shop:Button("Refund Stats",function()
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buy")
+  end)
  
  Misc:Seperator(" Joins ")
  
