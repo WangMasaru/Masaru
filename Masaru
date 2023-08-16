@@ -323,14 +323,14 @@ mainopens.Parent = mainopen
  local Hub = Instance.new("TextLabel")
  Hub.Name = "Hub"
  Hub.Parent = Top
- Hub.BackgroundColor3 = Color3.fromRGB(224,224,224)
+ Hub.BackgroundColor3 = Color3.fromRGB(110,166,250)
  Hub.BackgroundTransparency = 1.000
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
  Hub.Text = "Masaru HUB"
  Hub.TextColor3 = Color3.fromRGB(46,157,255)
- Hub.TextSize = 16.000
+ Hub.TextSize = 17.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
  
