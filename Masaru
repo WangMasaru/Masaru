@@ -9476,7 +9476,7 @@ if World1 then
 end
 
 if World2 or World3 then
-Dungeon:Seperator("Chỉ Dùng Để Raid")
+Dungeon:Seperator("Raid Mode")
 
 chip = {
 	"Flame", 
