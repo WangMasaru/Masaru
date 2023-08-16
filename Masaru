@@ -328,9 +328,9 @@ mainopens.Parent = mainopen
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
- Hub.Text = "        Masaru HUB"
+ Hub.Text = "ㅤㅤㅤㅤㅤㅤMasaru HUB"
  Hub.TextColor3 = Color3.fromRGB(255,196,102)
- Hub.TextSize = 19.000
+ Hub.TextSize = 20.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
  
