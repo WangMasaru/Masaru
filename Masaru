@@ -164,7 +164,7 @@ mainopens.Parent = mainopen
         local imagenoti = Instance.new("ImageLabel")
     
         imagenoti.Parent = TitleFrame
-        imagenoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        imagenoti.BackgroundColor3 = Color3.fromRGB(240, 158, 255)
         imagenoti.BackgroundTransparency = 1.000
         imagenoti.AnchorPoint = Vector2.new(0.5, 0.5)
         imagenoti.Position = UDim2.new(0.9, 0, 0.5, 0)
@@ -175,7 +175,7 @@ mainopens.Parent = mainopen
     
         txdlid.Parent = TitleFrame
         txdlid.Name = "TextLabel_Tap"
-        txdlid.BackgroundColor3 = Color3.fromRGB(122,111,111)
+        txdlid.BackgroundColor3 = Color3.fromRGB(238,141,247)
         txdlid.Size =UDim2.new(0, 160, 0,25 )
         txdlid.Font = Enum.Font.Code
         txdlid.Text = titel
@@ -191,7 +191,7 @@ mainopens.Parent = mainopen
         LableFrame.Name = "LableFrame"
         LableFrame.Parent = TitleFrame
         LableFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-        LableFrame.BackgroundColor3 = Color3.fromRGB(122,111,111)
+        LableFrame.BackgroundColor3 = Color3.fromRGB(238,141,247)
         LableFrame.BorderSizePixel = 0
         LableFrame.Position =  UDim2.new(0.36, 0, 0.67,0)
         LableFrame.Size = UDim2.new(0, 260, 0,25 )
@@ -317,7 +317,7 @@ mainopens.Parent = mainopen
  Name.Size = UDim2.new(0, 61, 0, 27)
  Name.Font = Enum.Font.Code
  Name.Text = text
- Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+ Name.TextColor3 = Color3.fromRGB(240, 158, 255)
  Name.TextSize = 14.000
  
  local Hub = Instance.new("TextLabel")
@@ -3809,7 +3809,7 @@ spawn(function()
    if _G.Auto_Farm_Ectoplasm and StartMagnetEctoplasm and string.find(v.Name, "Ship") and (v.HumanoidRootPart.Position - PosMonEctoplasm.Position).magnitude <= 350 then
    v.HumanoidRootPart.CFrame = PosMonEctoplasm
    v.HumanoidRootPart.CanCollide = false
-   v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+   v.HumanoidRootPart.Size = Vector3.new(238,141,247)
    if v.Humanoid:FindFirstChild("Animator") then
    v.Humanoid.Animator:Destroy()
    end
@@ -3832,7 +3832,7 @@ spawn(function()
   EquipWeapon(_G.Select_Weapon)
   PosMonEctoplasm = v.HumanoidRootPart.CFrame
   v.HumanoidRootPart.CanCollide = false
-  v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+  v.HumanoidRootPart.Size = Vector3.new(238,141,247)
   topos(v.HumanoidRootPart.CFrame * MethodFarm)
   StartMagnetEctoplasm = true
   game:GetService'VirtualUser':CaptureController()
@@ -3864,7 +3864,7 @@ spawn(function()
    if _G.Auto_Farm_Bone and StartMagnetBoneMon and (v.Name == "Reborn Skeleton [Lv. 1975]" or v.Name == "Living Zombie [Lv. 2000]" or v.Name == "Demonic Soul [Lv. 2025]" or v.Name == "Posessed Mummy [Lv. 2050]") and (v.HumanoidRootPart.Position - PosMonBone.Position).magnitude <= 350 then
    v.HumanoidRootPart.CFrame = PosMonBone
    v.HumanoidRootPart.CanCollide = false
-   v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+   v.HumanoidRootPart.Size = Vector3.new(238,141,247)
    if v.Humanoid:FindFirstChild("Animator") then
    v.Humanoid.Animator:Destroy()
    end
@@ -3924,7 +3924,7 @@ spawn(function()
 				if _G.Auto_Farm_Level and MasteryBFStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonMasteryFruit.Position).magnitude <= 350 then
 					v.HumanoidRootPart.CFrame = PosMonMasteryFruit
 					v.HumanoidRootPart.CanCollide = false
-					v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+					v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 					if v.Humanoid:FindFirstChild("Animator") then
 						v.Humanoid.Animator:Destroy()
 					end
@@ -3942,7 +3942,7 @@ spawn(function()
 				if _G.Auto_Farm_Level and MasteryGunStartMagnetActive and v.Name == Ms and (v.HumanoidRootPart.Position - PosMonMasteryGun.Position).magnitude <= 350 then
 					v.HumanoidRootPart.CFrame = PosMonMasteryGun
 					v.HumanoidRootPart.CanCollide = false
-					v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+					v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 					if v.Humanoid:FindFirstChild("Animator") then
 						v.Humanoid.Animator:Destroy()
 					end
@@ -3985,7 +3985,7 @@ spawn(function()
 												v.HumanoidRootPart.CanCollide = false
 												v.Humanoid.WalkSpeed = 0
 												v.Head.CanCollide = false
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												StartMagnet = true
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												game:GetService'VirtualUser':CaptureController()
@@ -4033,7 +4033,7 @@ spawn(function()
 													v.HumanoidRootPart.CanCollide = false
 													v.Humanoid.WalkSpeed = 0
 													v.Head.CanCollide = false
-													v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+													v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 													StartMagnet = true
 													topos(v.HumanoidRootPart.CFrame * MethodFarm)
 													game:GetService'VirtualUser':CaptureController()
@@ -4079,7 +4079,7 @@ spawn(function()
 											v.HumanoidRootPart.CanCollide = false
 											v.Humanoid.WalkSpeed = 0
 											v.Head.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											StartMagnet = true
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											game:GetService'VirtualUser':CaptureController()
@@ -4194,7 +4194,7 @@ spawn(function()
   AutoHaki()
   EquipWeapon(_G.Select_Weapon)
   v.HumanoidRootPart.CFrame = OldCFrameThird
-  v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+  v.HumanoidRootPart.Size = Vector3.new(238,141,247)
   v.HumanoidRootPart.CanCollide = false
   v.Humanoid.WalkSpeed = 0
   topos(v.HumanoidRootPart.CFrame * MethodFarm)
@@ -4950,7 +4950,7 @@ Main:Toggle("BF Mastery",_G.AutoFarmFruitMastery,function(value)
    EquipWeapon(_G.Select_Weapon)
    topos(v.HumanoidRootPart.CFrame * MethodFarm)
    v.HumanoidRootPart.CanCollide = false
-   v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+   v.HumanoidRootPart.Size = Vector3.new(238,141,247)
    PosMonMasteryFruit = v.HumanoidRootPart.CFrame
    v.Humanoid.WalkSpeed = 0
    v.Head.CanCollide = false
@@ -5201,7 +5201,7 @@ Main:Toggle("BF Mastery",_G.AutoFarmFruitMastery,function(value)
     v.Humanoid.WalkSpeed = 0
     v.HumanoidRootPart.CanCollide = false
     v.Head.CanCollide = false
-    v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+    v.HumanoidRootPart.Size = Vector3.new(238,141,247)
     topos(v.HumanoidRootPart.CFrame * MethodFarm)
     game:GetService'VirtualUser':CaptureController()
     game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -5530,7 +5530,7 @@ spawn(function()
 												v.HumanoidRootPart.CanCollide = false
 												v.Humanoid.WalkSpeed = 0
 												v.Head.CanCollide = false
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												StartMagnet = true
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												game:GetService'VirtualUser':CaptureController()
@@ -5869,7 +5869,7 @@ end)
 												EquipWeapon(_G.Select_Weapon)
 												v.HumanoidRootPart.CanCollide = false
 												v.Humanoid.WalkSpeed = 0
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												game:GetService("VirtualUser"):CaptureController()
 												game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
@@ -5939,7 +5939,7 @@ end)
 					if _G.Auto_Open_Dough_Dungeon and StartCakeStartMagnet and (v.Name == "Cookie Crafter [Lv. 2200]" or v.Name == "Cake Guard [Lv. 2225]" or v.Name == "Baking Staff [Lv. 2250]" or v.Name == "Head Baker [Lv. 2275]") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = POSCAKE
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -5957,7 +5957,7 @@ end)
 					if _G.Auto_Cake_Prince and StartCakeStartMagnet and (v.Name == "Cookie Crafter [Lv. 2200]" or v.Name == "Cake Guard [Lv. 2225]" or v.Name == "Baking Staff [Lv. 2250]" or v.Name == "Head Baker [Lv. 2275]") and (v.HumanoidRootPart.Position - POSCAKE.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = POSCAKE
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -6280,13 +6280,13 @@ spawn(function()
 				if Auto_Quest_Yama_2 then
 					for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
 						if v:FindFirstChild("HazeESP") then
-							v.HazeESP.Size = UDim2.new(122,111,111,50)
+							v.HazeESP.Size = UDim2.new(238,141,247,50)
 							v.HazeESP.MaxDistance = "inf"
 						end
 					end
 					for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
 						if v:FindFirstChild("HazeESP") then
-							v.HazeESP.Size = UDim2.new(122,111,111,50)
+							v.HazeESP.Size = UDim2.new(238,141,247,50)
 							v.HazeESP.MaxDistance = "inf"
 						end
 					end
@@ -6302,7 +6302,7 @@ spawn(function()
 					if Auto_Quest_Yama_2 and v:FindFirstChild("HazeESP") and (v.HumanoidRootPart.Position - PosMonsEsp.Position).magnitude <= 300 then
 						v.HumanoidRootPart.CFrame = PosMonsEsp
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if not v.HumanoidRootPart:FindFirstChild("BodyVelocity") then
 							local vc = Instance.new("BodyVelocity", v.HumanoidRootPart)
 							vc.MaxForce = Vector3.new(1, 1, 1) * math.huge
@@ -6846,7 +6846,7 @@ Weapon:Toggle("Lấy Saber",_G.AutoSaber,function(value)
                                         EquipWeapon(_G.SelectWeapon)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
-                                        v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+                                        v.HumanoidRootPart.Size = Vector3.new(238,141,247)
                                         topos(v.HumanoidRootPart.CFrame * MethodFarm)                         
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
@@ -6893,7 +6893,7 @@ end)
 					if _G.Auto_Evo_Race_V2 and StartEvoStartMagnet and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonEvo.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = PosMonEvo
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -6930,7 +6930,7 @@ end)
 													EquipWeapon(_G.Select_Weapon)
 													topos(v.HumanoidRootPart.CFrame * MethodFarm)
 													v.HumanoidRootPart.CanCollide = false
-													v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+													v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 													game:GetService'VirtualUser':CaptureController()
 													game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 													PosMonEvo = v.HumanoidRootPart.CFrame
@@ -7101,7 +7101,7 @@ end)
 					if _G.Auto_Rengoku and StartRengokuStartMagnet and (v.Name == "Snow Lurker [Lv. 1375]" or v.Name == "Arctic Warrior [Lv. 1350]") and (v.HumanoidRootPart.Position - RengokuMon.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = RengokuMon
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -7126,7 +7126,7 @@ end)
 									AutoHaki()
 									EquipWeapon(_G.Select_Weapon)
 									v.HumanoidRootPart.CanCollide = false
-									v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+									v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 									RengokuMon = v.HumanoidRootPart.CFrame
 									topos(v.HumanoidRootPart.CFrame * MethodFarm)
 									game:GetService'VirtualUser':CaptureController()
@@ -7262,7 +7262,7 @@ end)
 											AutoHaki()
 											EquipWeapon(_G.Select_Weapon)
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -7365,7 +7365,7 @@ end)
 													EquipWeapon(_G.Select_Weapon)
 													v.HumanoidRootPart.CanCollide = false
 													v.Humanoid.WalkSpeed = 0
-													v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+													v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 													topos(v.HumanoidRootPart.CFrame * MethodFarm)
 													game:GetService("VirtualUser"):CaptureController()
 													game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
@@ -7446,7 +7446,7 @@ end)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											v.HumanoidRootPart.CanCollide = false
 											v.HumanoidRootPart.CFrame = OldCFrameRainbow
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 											sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -7473,7 +7473,7 @@ end)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											v.HumanoidRootPart.CanCollide = false
 											v.HumanoidRootPart.CFrame = OldCFrameRainbow
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 											sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -7499,7 +7499,7 @@ end)
 											EquipWeapon(_G.Select_Weapon)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											v.HumanoidRootPart.CFrame = OldCFrameRainbow
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -7526,7 +7526,7 @@ end)
 											EquipWeapon(_G.Select_Weapon)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											v.HumanoidRootPart.CFrame = OldCFrameRainbow
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -7553,7 +7553,7 @@ end)
 											EquipWeapon(_G.Select_Weapon)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											v.HumanoidRootPart.CFrame = OldCFrameRainbow
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -7792,7 +7792,7 @@ Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 										end
 										v.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
 										v.HumanoidRootPart.CanCollide = false
-										v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+										v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 										game:GetService'VirtualUser':CaptureController()
 										game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 										StatrMagnet = true
@@ -7821,7 +7821,7 @@ Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 										end
 										v.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
 										v.HumanoidRootPart.CanCollide = false
-										v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+										v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 										game:GetService'VirtualUser':CaptureController()
 										game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 									until _G.AutoObservationHakiV2 == false or v.Humanoid.Health <= 0
@@ -7955,7 +7955,7 @@ Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 					if _G.Auto_Bartilo_Quest and AutoBartiloBring and v.Name == "Swan Pirate [Lv. 775]" and (v.HumanoidRootPart.Position - PosMonBarto.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = PosMonBarto
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -7981,7 +7981,7 @@ Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 												EquipWeapon(_G.Select_Weapon)
 												v.HumanoidRootPart.Transparency = 1
 												v.HumanoidRootPart.CanCollide = false
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)													
 												PosMonBarto =  v.HumanoidRootPart.CFrame
 												game:GetService'VirtualUser':CaptureController()
@@ -8011,7 +8011,7 @@ Weapon:Toggle("Tự Động Lấy Ken V2",_G.AutoObservationHakiV2,function(x)
 										EquipWeapon(_G.Select_Weapon)
 										v.HumanoidRootPart.Transparency = 1
 										v.HumanoidRootPart.CanCollide = false
-										v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+										v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 										v.HumanoidRootPart.CFrame = OldCFrameBartlio
 										topos(v.HumanoidRootPart.CFrame * MethodFarm)
 										game:GetService'VirtualUser':CaptureController()
@@ -8069,7 +8069,7 @@ end)
 					if _G.Auto_Musketeer_Hat and StartMagnetMusketeerhat and v.Name == "Forest Pirate [Lv. 1825]" and (v.HumanoidRootPart.Position - MusketeerHatMon.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = MusketeerHatMon
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+						v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
@@ -8093,7 +8093,7 @@ end)
 											pcall(function()
 												AutoHaki()
 												EquipWeapon(_G.Select_Weapon)
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												v.HumanoidRootPart.CanCollide = false
 												game:GetService'VirtualUser':CaptureController()
@@ -8127,7 +8127,7 @@ end)
 												AutoHaki()
 												EquipWeapon(_G.Select_Weapon)
 												v.HumanoidRootPart.CanCollide = false
-												v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+												v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												v.HumanoidRootPart.CanCollide = false
 												v.HumanoidRootPart.CFrame = OldCFrameElephant
@@ -8359,7 +8359,7 @@ spawn(function()
 											v.Head.CanCollide = false
 											v.Humanoid.WalkSpeed = 0
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -8444,7 +8444,7 @@ spawn(function()
 											v.Head.CanCollide = false
 											v.Humanoid.WalkSpeed = 0
 											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+											v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 											topos(v.HumanoidRootPart.CFrame * MethodFarm)
 											game:GetService'VirtualUser':CaptureController()
 											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -9725,7 +9725,7 @@ spawn(function()
 								AutoHaki()
 								EquipWeapon(_G.Select_Weapon)
 								v.HumanoidRootPart.CanCollide = false
-								v.HumanoidRootPart.Size = Vector3.new(122,111,111)
+								v.HumanoidRootPart.Size = Vector3.new(238,141,247)
 								topos(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
 								game:GetService'VirtualUser':CaptureController()
 								game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
