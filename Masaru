@@ -4372,7 +4372,7 @@ end)
 spawn(function()
 	while task.wait() do
 		pcall(function()
-			if _G.Auto_Farm_Level and _G.Select_Mode_Farm == "Near Farm Mode" then
+			if _G.Auto_Farm_Level and _G.Select_Mode_Farm == "Farm Gần" then
 				for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
 					if v.Name == Ms and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 350 then
 						v.Humanoid.WalkSpeed = 0
@@ -4427,7 +4427,7 @@ spawn(function()
 					if _G.Auto_Farm_Level and StartMagnet and v.Name == Ms and (v.HumanoidRootPart.Position - PosMon.Position).magnitude <= 350 then
 						v.HumanoidRootPart.CFrame = PosMon
 						v.HumanoidRootPart.CanCollide = false
-						v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+						v.HumanoidRootPart.Size = Vector3.new(55,55,55)
 						if v.Humanoid:FindFirstChild("Animator") then
 							v.Humanoid.Animator:Destroy()
 						end
