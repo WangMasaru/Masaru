@@ -328,9 +328,9 @@ mainopens.Parent = mainopen
  Hub.Position = UDim2.new(0, 110, 0, 0)
  Hub.Size = UDim2.new(0, 81, 0, 27)
  Hub.Font = Enum.Font.Code
- Hub.Text = "ㅤㅤㅤMasaru HUB"
- Hub.TextColor3 = Color3.fromRGB(0,255,0)
- Hub.TextSize = 17.000
+ Hub.Text = "Masaru HUB"
+ Hub.TextColor3 = Color3.fromRGB(46,157,255)
+ Hub.TextSize = 16.000
  Hub.TextXAlignment = Enum.TextXAlignment.Left
  
  
@@ -4497,7 +4497,7 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 200
+                    xShadowx.activeController.hitboxMagnitude = 210
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
@@ -10343,7 +10343,7 @@ if World2 then
 			UpdateChestChams() 
 		end
 	end)
-	DevilFruit:Toggle("ESP Fruit",false,function(a)
+	DevilFruit:Toggle("ESP Fruit",true,function(a)
 		DevilFruitESP = a
 		while DevilFruitESP do wait()
 			UpdateDevilChams() 
