@@ -318,7 +318,7 @@ mainopens.Parent = mainopen
  Name.Font = Enum.Font.Code
  Name.Text = text
  Name.TextColor3 = Color3.fromRGB(240, 158, 255)
- Name.TextSize = 14.200
+ Name.TextSize = 14.000
  
  local Hub = Instance.new("TextLabel")
  Hub.Name = "Hub"
@@ -449,7 +449,7 @@ mainopens.Parent = mainopen
  TabButton.Size = UDim2.new(0, 130, 0, 23)
  TabButton.Font = Enum.Font.Gotham
  TabButton.TextColor3 = Color3.fromRGB(219, 96, 201)
- TabButton.TextSize = 11.200
+ TabButton.TextSize = 11.000
  TabButton.TextTransparency = 0.100
  
  local TabFrame = Instance.new("Frame")
@@ -585,7 +585,7 @@ wait(0.4)
 NotificationFrame.Name = "NotificationFrame"
 NotificationFrame.Parent = NotificationHold
 NotificationFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-NotificationFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+NotificationFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
 NotificationFrame.BorderColor3 = _G.SectionColor
 NotificationFrame.BorderSizePixel = 0
 NotificationFrame.Transparency = 0
@@ -611,7 +611,7 @@ NotifHolderUIStroke.Archivable = true
 
 OkayBtn.Name = "OkayBtn"
 OkayBtn.Parent = NotificationFrame
-OkayBtn.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+OkayBtn.BackgroundColor3 = Color3.fromRGB(235, 117, 174)
 OkayBtn.BorderSizePixel = 1
 OkayBtn.BorderColor3 = _G.SectionColor
 OkayBtn.Position = UDim2.new(0, 125, 0, 190)
@@ -832,7 +832,7 @@ end
  Space.Font = Enum.Font.Gotham
  Space.Text = ""
  Space.TextSize = 12.000
- Space.TextColor3 = Color3.fromRGB(255,225,225)
+ Space.TextColor3 = Color3.fromRGB(209, 65, 123)
  Space.TextXAlignment = Enum.TextXAlignment.Center
  
  Title.Name = "Title"
@@ -865,7 +865,7 @@ end
  ImageButton.ImageRectOffset = Vector2.new(4, 836)
  game.TweenService:Create(ImageButton, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
   {
-   ImageColor3 = Color3.fromRGB(255,225,225)}
+   ImageColor3 = Color3.fromRGB(209, 65, 123)}
  ):Play()
  toggle = not toggle
  pcall(callback, toggle)
@@ -875,7 +875,7 @@ end
   if toggle == false then
   game.TweenService:Create(ImageButton, TweenInfo.new(0.08, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut),
    {
-    ImageColor3 = Color3.fromRGB(255,225,225)}
+    ImageColor3 = Color3.fromRGB(209, 65, 123)}
   ):Play()
   ImageButton.ImageRectOffset = Vector2.new(4, 836)
   else
@@ -968,7 +968,7 @@ end
  DropButton.Font = Enum.Font.SourceSans
  DropButton.Text = ""
  DropButton.TextColor3 = Color3.fromRGB(0, 0, 0)
- DropButton.TextSize = 14.200
+ DropButton.TextSize = 14.000
  
  for i,v in next,option do
  local Item = Instance.new("TextButton")
@@ -1542,7 +1542,7 @@ end
  AHEHE.Font = Enum.Font.SourceSans
  AHEHE.Text = ""
  AHEHE.TextColor3 = Color3.fromRGB(0, 0, 0)
- AHEHE.TextSize = 14.200
+ AHEHE.TextSize = 14.000
  
  bar.Name = "bar"
  bar.Parent = AHEHE
@@ -1714,7 +1714,7 @@ end
  txtbtn.Font = Enum.Font.SourceSans
  txtbtn.Text = ""
  txtbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
- txtbtn.TextSize = 14.200
+ txtbtn.TextSize = 14.000
  
  RealTextbox.Name = "RealTextbox"
  RealTextbox.Parent = Textbox
@@ -1725,7 +1725,7 @@ end
  RealTextbox.Font = Enum.Font.Gotham
  RealTextbox.Text = ""
  RealTextbox.TextColor3 = Color3.fromRGB(219, 96, 201)
- RealTextbox.TextSize = 11.200
+ RealTextbox.TextSize = 11.000
  RealTextbox.TextTransparency = 0
  
  RealTextbox.FocusLost:Connect(function()
@@ -1818,7 +1818,7 @@ function main:Seperator(text)
  Sep2.Font = Enum.Font.Gotham
  Sep2.Text = text
  Sep2.TextColor3 = Color3.fromRGB(240, 158, 217)
- Sep2.TextSize = 14.200
+ Sep2.TextSize = 14.000
  
  Sep3.Name = "Sep3"
  Sep3.Parent = Seperator
