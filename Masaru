@@ -449,7 +449,7 @@ mainopens.Parent = mainopen
  TabButton.Size = UDim2.new(0, 130, 0, 23)
  TabButton.Font = Enum.Font.Gotham
  TabButton.TextColor3 = Color3.fromRGB(219, 96, 201)
- TabButton.TextSize = 11.000
+ TabButton.TextSize = 14.000
  TabButton.TextTransparency = 0.100
  
  local TabFrame = Instance.new("Frame")
@@ -633,7 +633,7 @@ OkayBtnTitle.BackgroundTransparency = 1.000
 OkayBtnTitle.Size = UDim2.new(0, 150, 0, 30)
 OkayBtnTitle.Text = "OK"
 OkayBtnTitle.Font = Enum.Font.Gotham
-OkayBtnTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+OkayBtnTitle.TextColor3 = Color3.fromRGB(36, 2, 10)
 OkayBtnTitle.TextSize = 22.000
 
 NotificationTitle.Name = "NotificationTitle"
@@ -716,22 +716,22 @@ end
  
  TextBtn.Name = "TextBtn"
  TextBtn.Parent = Button
- TextBtn.BackgroundColor3 = Color3.fromRGB(244,244,244)
+ TextBtn.BackgroundColor3 = Color3.fromRGB(255, 196, 223)
  TextBtn.BackgroundTransparency = 0.500
  TextBtn.Position = UDim2.new(0, 1, 0, 1)
  TextBtn.Size = UDim2.new(0, 308, 0, 29)
  TextBtn.AutoButtonColor = false
  TextBtn.Font = Enum.Font.Gotham
  TextBtn.Text = text
- TextBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
- TextBtn.TextSize = 12.000
+ TextBtn.TextColor3 = Color3.fromRGB(36, 2, 10)
+ TextBtn.TextSize = 13.000
  
  UICorner_2.CornerRadius = UDim.new(0, 5)
  UICorner_2.Parent = TextBtn
  
  Black.Name = "Black"
  Black.Parent = Button
- Black.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ Black.BackgroundColor3 = Color3.fromRGB(36, 2, 10)
  Black.BackgroundTransparency = 1.000
  Black.BorderSizePixel = 0
  Black.Position = UDim2.new(0, 1, 0, 1)
@@ -831,7 +831,7 @@ end
  Space.Size = UDim2.new(0, 15, 0, 30)
  Space.Font = Enum.Font.Gotham
  Space.Text = ""
- Space.TextSize = 12.000
+ Space.TextSize = 13.000
  Space.TextColor3 = Color3.fromRGB(209, 65, 123)
  Space.TextXAlignment = Enum.TextXAlignment.Center
  
@@ -844,7 +844,7 @@ end
  Title.Font = Enum.Font.Gotham
  Title.Text = TogInfo or "checkBox Title"
  Title.TextColor3 = Color3.fromRGB(240, 158, 217)
- Title.TextSize = 12.000
+ Title.TextSize = 13.000
  Title.TextXAlignment = Enum.TextXAlignment.Left
  
  ImageButton.Name = "ImageButton"
@@ -930,7 +930,7 @@ end
  DropTitle.Font = Enum.Font.Gotham
  DropTitle.Text = text.. " : "
  DropTitle.TextColor3 = Color3.fromRGB(219, 96, 201)
- DropTitle.TextSize = 12.000
+ DropTitle.TextSize = 13.000
  
  DropScroll.Name = "DropScroll"
  DropScroll.Parent = DropTitle
@@ -967,7 +967,7 @@ end
  DropButton.Size = UDim2.new(0, 310, 0, 31)
  DropButton.Font = Enum.Font.SourceSans
  DropButton.Text = ""
- DropButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ DropButton.TextColor3 = Color3.fromRGB(36, 2, 10)
  DropButton.TextSize = 14.000
  
  for i,v in next,option do
@@ -1194,7 +1194,7 @@ Title.Size = UDim2.new(0, 280, 0, 30)
 Title.Font = Enum.Font.Gotham
 Title.Text = slidertitle or "Slider Title"
 Title.TextColor3 = Color3.fromRGB(240, 158, 217)
-Title.TextSize = 12.000
+Title.TextSize = 13.000
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
 SliderInput.Name = "SliderInput"
@@ -1523,7 +1523,7 @@ end
  SliderLabel.Font = Enum.Font.Gotham
  SliderLabel.Text = text
  SliderLabel.TextColor3 = Color3.fromRGB(240, 158, 217)
- SliderLabel.TextSize = 12.000
+ SliderLabel.TextSize = 13.000
  SliderLabel.TextTransparency = 0
  SliderLabel.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -1541,7 +1541,7 @@ end
  AHEHE.Size = UDim2.new(0, 290, 0, 5)
  AHEHE.Font = Enum.Font.SourceSans
  AHEHE.Text = ""
- AHEHE.TextColor3 = Color3.fromRGB(0, 0, 0)
+ AHEHE.TextColor3 = Color3.fromRGB(36, 2, 10)
  AHEHE.TextSize = 14.000
  
  bar.Name = "bar"
@@ -1713,7 +1713,7 @@ end
  txtbtn.Size = UDim2.new(0, 310, 0, 29)
  txtbtn.Font = Enum.Font.SourceSans
  txtbtn.Text = ""
- txtbtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+ txtbtn.TextColor3 = Color3.fromRGB(36, 2, 10)
  txtbtn.TextSize = 14.000
  
  RealTextbox.Name = "RealTextbox"
@@ -1725,7 +1725,7 @@ end
  RealTextbox.Font = Enum.Font.Gotham
  RealTextbox.Text = ""
  RealTextbox.TextColor3 = Color3.fromRGB(219, 96, 201)
- RealTextbox.TextSize = 11.000
+ RealTextbox.TextSize = 14.000
  RealTextbox.TextTransparency = 0
  
  RealTextbox.FocusLost:Connect(function()
@@ -1750,7 +1750,7 @@ end
  Label.Size = UDim2.new(0, 325, 0, 20)
  Label.Font = Enum.Font.Gotham
  Label.TextColor3 = Color3.fromRGB(219, 96, 201)
- Label.TextSize = 12.000
+ Label.TextSize = 13.000
  Label.Text = text
  Label.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -1776,7 +1776,7 @@ end
  Label1.Size = UDim2.new(0, 325, 0, 20)
  Label1.Font = Enum.Font.Gotham
  Label1.TextColor3 = Color3.fromRGB(219, 96, 201)
- Label1.TextSize = 12.000
+ Label1.TextSize = 13.000
  Label1.Text = text
  Label1.TextXAlignment = Enum.TextXAlignment.Left
  
@@ -6306,7 +6306,7 @@ spawn(function()
 						if not v.HumanoidRootPart:FindFirstChild("BodyVelocity") then
 							local vc = Instance.new("BodyVelocity", v.HumanoidRootPart)
 							vc.MaxForce = Vector3.new(1, 1, 1) * math.huge
-							vc.Velocity = Vector3.new(0, 0, 0)
+							vc.Velocity = Vector3.new(36, 2, 10)
 						end
 					end
 				end
