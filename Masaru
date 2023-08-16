@@ -10343,16 +10343,16 @@ if World2 then
 			UpdateChestChams() 
 		end
 	end)
-	DevilFruit:Toggle("ESP Fruit",false,function(a)
-		DevilFruitESP = a
-		while DevilFruitESP do wait()
-			UpdateDevilChams() 
-		end
-	end)
 	DevilFruit:Toggle("ESP Flower",false,function(a)
 		FlowerESP = a
 		while FlowerESP do wait()
 			UpdateFlowerChams() 
+		end
+	end)
+	DevilFruit:Toggle("ESP Fruit",false,function(a)
+		DevilFruitESP = a
+		while DevilFruitESP do wait()
+			UpdateDevilChams() 
 		end
 	end)
 	
