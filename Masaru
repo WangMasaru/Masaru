@@ -633,7 +633,7 @@ OkayBtnTitle.BackgroundTransparency = 1.000
 OkayBtnTitle.Size = UDim2.new(0, 150, 0, 30)
 OkayBtnTitle.Text = "OK"
 OkayBtnTitle.Font = Enum.Font.Gotham
-OkayBtnTitle.TextColor3 = Color3.fromRGB(135, 10, 15)
+OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 140, 145)
 OkayBtnTitle.TextSize = 22.000
 
 NotificationTitle.Name = "NotificationTitle"
@@ -723,7 +723,7 @@ end
  TextBtn.AutoButtonColor = false
  TextBtn.Font = Enum.Font.Gotham
  TextBtn.Text = text
- TextBtn.TextColor3 = Color3.fromRGB(135, 10, 15)
+ TextBtn.TextColor3 = Color3.fromRGB(255, 140, 145)
  TextBtn.TextSize = 13.500
  
  UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -731,7 +731,7 @@ end
  
  Black.Name = "Black"
  Black.Parent = Button
- Black.BackgroundColor3 = Color3.fromRGB(135, 10, 15)
+ Black.BackgroundColor3 = Color3.fromRGB(255, 140, 145)
  Black.BackgroundTransparency = 1.000
  Black.BorderSizePixel = 0
  Black.Position = UDim2.new(0, 1, 0, 1)
@@ -967,7 +967,7 @@ end
  DropButton.Size = UDim2.new(0, 310, 0, 31)
  DropButton.Font = Enum.Font.SourceSans
  DropButton.Text = ""
- DropButton.TextColor3 = Color3.fromRGB(135, 10, 15)
+ DropButton.TextColor3 = Color3.fromRGB(255, 140, 145)
  DropButton.TextSize = 14.000
  
  for i,v in next,option do
@@ -1541,7 +1541,7 @@ end
  AHEHE.Size = UDim2.new(0, 290, 0, 5)
  AHEHE.Font = Enum.Font.SourceSans
  AHEHE.Text = ""
- AHEHE.TextColor3 = Color3.fromRGB(135, 10, 15)
+ AHEHE.TextColor3 = Color3.fromRGB(255, 140, 145)
  AHEHE.TextSize = 14.000
  
  bar.Name = "bar"
@@ -1713,7 +1713,7 @@ end
  txtbtn.Size = UDim2.new(0, 310, 0, 29)
  txtbtn.Font = Enum.Font.SourceSans
  txtbtn.Text = ""
- txtbtn.TextColor3 = Color3.fromRGB(135, 10, 15)
+ txtbtn.TextColor3 = Color3.fromRGB(255, 140, 145)
  txtbtn.TextSize = 14.000
  
  RealTextbox.Name = "RealTextbox"
@@ -6306,7 +6306,7 @@ spawn(function()
 						if not v.HumanoidRootPart:FindFirstChild("BodyVelocity") then
 							local vc = Instance.new("BodyVelocity", v.HumanoidRootPart)
 							vc.MaxForce = Vector3.new(1, 1, 1) * math.huge
-							vc.Velocity = Vector3.new(135, 10, 15)
+							vc.Velocity = Vector3.new(255, 140, 145)
 						end
 					end
 				end
