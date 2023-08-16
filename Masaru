@@ -8831,7 +8831,7 @@ spawn(function()
 end)
 
 Stats:Button("Stat Refund",function()
-  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,2)
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","BuyStatRefund",1,2)
   end)
 
 Stats:Slider("Select Point",1,100,1,function(value)
@@ -10499,9 +10499,6 @@ if World2 then
  Shop:Button("Race Reroll",function()
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,3)
  end)
- Shop:Button("Stat Refund",function()
-  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,2)
-  end)
  
  Misc:Seperator(" Joins ")
  
